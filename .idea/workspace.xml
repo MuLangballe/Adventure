@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AdventureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
-    <list id="ad138746-f1a7-4d2f-9f16-dd3114b3782d" name="Changes by Marie" comment="" />
+    <list id="ad138746-f1a7-4d2f-9f16-dd3114b3782d" name="Changes by Marie" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,11 +25,28 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/UserInterface.java">
+      <ranges>
+        <range start1="3" end1="3" start2="3" end2="5" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="4" end1="4" start2="6" end2="11" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
+        <range start1="5" end1="6" start2="12" end2="13" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="7" end1="9" start2="14" end2="47" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="11" end1="13" start2="49" end2="51" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="15" end1="16" start2="53" end2="54" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="17" end1="18" start2="55" end2="56" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="20" end1="21" start2="58" end2="59" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="23" end1="26" start2="61" end2="62" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="27" end1="28" start2="63" end2="63" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -41,6 +62,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -49,6 +72,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,11 +89,25 @@
       <option name="presentableId" value="Default" />
       <updated>1695648006659</updated>
       <workItem from="1695648007672" duration="1000" />
-      <workItem from="1695648224854" duration="1249000" />
+      <workItem from="1695648224854" duration="1292000" />
+      <workItem from="1695724653675" duration="9774000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1695649658203</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695649658203</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>
