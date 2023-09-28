@@ -1,5 +1,6 @@
 public class Room {
     private String roomName;
+    private String description;
     private Room goNorth;
     private Room goSouth;
     private Room goWest;
@@ -50,5 +51,9 @@ public class Room {
 
     public void setGoEast(Room goEast) {
         this.goEast = goEast;
+    }
+
+    public String getDescription() {
+        return description;
     }
 }

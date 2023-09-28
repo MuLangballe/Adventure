@@ -2,12 +2,22 @@ import java.util.Scanner;
 
 public class UserInterface {
 
-    public void startGame(){
+    private Adventure adventureGame;
+    private Scanner keyboard;
 
-    // Opgave 1: Start med at lave brugerfladen + kommandoer i switch-case, med String håndtering
+    public UserInterface (Adventure adventureGame) {
+        this.adventureGame = adventureGame;
+        this.keyboard = new Scanner(System.in);
+
+    }
+    public void startGame() {
+        adventureGame.buildMap();
+
+        String menuChoice;
 
         System.out.println("Welcome to adventure game!");
-        System.out.println("Your adventure starts in room 1. ");
+        System.out.println("Your adventure starts in room 1. \n");
+
         do {
             System.out.println("Here are your choices: \n " +
                     "Go south, north, east or west \n " +
@@ -55,4 +65,14 @@ public class UserInterface {
 
 
 }
-}
+
+// 1. Current position:
+// Room objekt, med navn og beskrivelse.
+
+
+// 2. Udskrive hvilke retninger man kan bevæge sig i fra current position/Room object.
+
+// 3. Metode til at flytte sig fra ét rum til et andet (set):
+
+
+// 4. Gentage processen
