@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Room {
     private String roomName;
     private String description;
@@ -5,8 +7,8 @@ public class Room {
     private Room goSouth;
     private Room goWest;
     private Room goEast;
+    private ArrayList<Item> items = new ArrayList<>();
 
-    // private String beskrivelse;
 
     public Room (String roomName, String description) {
         this.roomName = roomName;
