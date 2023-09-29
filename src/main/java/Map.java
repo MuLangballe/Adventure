@@ -4,15 +4,15 @@ public class Map {
 
     public void buildMap() {
 
-        Room room1 = new Room("Room 1", "description");
-        Room room2 = new Room("Room 2", "description");
-        Room room3 = new Room("Room 3", "description");
-        Room room4 = new Room("Room 4", "description");
-        Room room5 = new Room("Room 5", "description");
-        Room room6 = new Room("Room 6", "description");
-        Room room7 = new Room("Room 7", "description");
-        Room room8 = new Room("Room 8", "description");
-        Room room9 = new Room("Room 9", "description");
+        Room room1 = new Room("the cave entrance. ", "You are standing in a forrest, looking into a cave. The entrance splits in two directions. A small flashlight appears just outside of the cave.");
+        Room room2 = new Room("the clay cave. ", "You are standing in a typical cave-like room with clay walls. There are roots coming down from the ceiling.");
+        Room room3 = new Room("the moist cave. ", "You entered a moist room with a lot of colorful fungi.");
+        Room room4 = new Room("the drip cave. ", "You hear a drip as you enter the room. A small hole in the ceiling let's the moonshine in. Another drip. A dark and mysterious shadow approaches you.");
+        Room room5 = new Room("the diamond cave. ", "You go through the small and narrow hole in the north wall... at first the darkness is overwhelming. So you turn on your flashlight, and is almost blinded by something shining. You discover the whole cave is covered in diamonds!");
+        Room room6 = new Room("the prison room. ", "This room has thick stonewalls and floors. You notice some broken chains on the floor, and some broken barricades in front of the rooms entrances.");
+        Room room7 = new Room("the narrow cave. ", "This room is very narrow and full of cobwebs and spiders.");
+        Room room8 = new Room("the cellar room. ", "The room has a stonewall, and looks like a cellar room. There is a picture of a strange creature on the north wall. Looks like there's a hole behind it...");
+        Room room9 = new Room("the very very dark cave. ", "You entered a very dark room, it is hard to see anything. Whoops! You fall. There must be a hole in the floor! You try to get up - and feels something just beside your right hand. it's sharp. Sort of feels like a sword?");
 
         startRoom = room1;
 
@@ -20,6 +20,7 @@ public class Map {
         // Directions+items from room 1:
         room1.setGoEast(room2);
         room1.setGoSouth(room4);
+        room1.addItem("Flashlight", "A small but effective flashlight.");
 
         // Directions+items from room 2:
         room2.setGoEast(room3);
@@ -28,6 +29,7 @@ public class Map {
         // Directions+items from room 3:
         room3.setGoSouth(room6);
         room3.setGoWest(room2);
+        room3.addItem("Luminous mushroom", "You don't know what to use it for, but it's pretty");
 
         // Directions+items from room 4:
         room4.setGoNorth(room1);
@@ -35,6 +37,7 @@ public class Map {
 
         // Directions+items from room 5:
         room5.setGoSouth(room8);
+        room5.addItem("Diamonds", "Shiny!");
 
         // Directions+items from room 6:
         room6.setGoNorth(room3);
@@ -52,6 +55,7 @@ public class Map {
         // Directions+items from room 9:
         room9.setGoNorth(room6);
         room9.setGoWest(room8);
+        room9.addItem("Sword", "Sharp silver sword with A LOT of diamonds");
 
     }
 

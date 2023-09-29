@@ -18,7 +18,7 @@ public class Player {
                 current = wantedRoom;
                 System.out.println("you are now in " + getCurrentPosition());
             } else {
-                System.out.println("No room in that direction");
+                System.out.println("No room in that direction.");
             }
         } else if (nextRoom.equalsIgnoreCase("go north")) {
                 Room wantedRoom = current.getGoNorth();
@@ -26,36 +26,24 @@ public class Player {
                     current = wantedRoom;
                     System.out.println("you are now in " + getCurrentPosition());
                 } else {
-                    System.out.println("No room in that direction");
+                    System.out.println("No room in that direction.");
                 }
         } else if (nextRoom.equalsIgnoreCase("go east")) {
                     Room wantedRoom = current.getGoEast();
-                    current = wantedRoom;
-                    System.out.println("you are now in " + getCurrentPosition());
-                } else {
-                    System.out.println("No room in that direction");
+                    if (wantedRoom != null) {
+                        current = wantedRoom;
+                        System.out.println("you are now in " + getCurrentPosition());
+                    } else {
+                        System.out.println("No room in that direction.");
+                    }
+        } else if (nextRoom.equalsIgnoreCase("go west")) {
+                        Room wantedRoom = current.getGoWest();
+                        if (wantedRoom != null) {
+                            current = wantedRoom;
+                            System.out.println("you are now in " + getCurrentPosition());
+                        } else {
+                            System.out.println("No room in that direction.");
+                        }
+                    }
                 }
-
-            } else if (nextRoom.equalsIgnoreCase("go west")) {
-                if (nextRoom.equalsIgnoreCase("go west")) {
-                    Room wantedRoom = current.getGoWest();
-                    current = wantedRoom;
-                    System.out.println("you are now in " + getCurrentPosition());
-                } else {
-                    System.out.println("No room in that direction");
-                }
-                current = current.getGoWest();
             }
-        }
-
-    }
-
-    public String getCurrentPosition() {
-        return current.getRoomName() + current.getDescription();
-
-
-
-    }
-
-}
-
