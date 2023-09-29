@@ -15,6 +15,10 @@ public class Room {
         this.description = description;
     }
 
+    public void addItem(String itemName, String itemDescription){
+        items.add(new Item(itemName, itemDescription));
+    }
+
     public String getRoomName() {
         return roomName;
     }

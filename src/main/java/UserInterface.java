@@ -10,13 +10,15 @@ public class UserInterface {
         this.keyboard = new Scanner(System.in);
 
     }
+    // TODO: del 2 nye kommandoer: inventory, take, drop.
+    // TODO: brugerfladen udvides, så man sammen med beskrivelsen af et rum, får en liste over de ting der ligger i rummet
     public void startGame() {
         adventureGame.buildMap();
 
         String menuChoice;
 
         System.out.println("Welcome to adventure game!");
-        System.out.println("Your adventure starts in room 1. \n");
+        System.out.println("Your adventure starts in a forrest, looking into a cave. The entrance splits in two directions. A small flashlight appears just outside of the cave.\n");
 
         do {
             System.out.println("Here are your choices: \n " +

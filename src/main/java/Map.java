@@ -17,39 +17,39 @@ public class Map {
         startRoom = room1;
 
 
-        // Directions from room 1:
+        // Directions+items from room 1:
         room1.setGoEast(room2);
         room1.setGoSouth(room4);
 
-        // Directions from room 2:
+        // Directions+items from room 2:
         room2.setGoEast(room3);
         room2.setGoWest(room1);
 
-        // Directions from room 3:
+        // Directions+items from room 3:
         room3.setGoSouth(room6);
         room3.setGoWest(room2);
 
-        // Directions from room 4:
+        // Directions+items from room 4:
         room4.setGoNorth(room1);
         room4.setGoNorth(room1);
 
-        // Directions from room 5:
+        // Directions+items from room 5:
         room5.setGoSouth(room8);
 
-        // Directions from room 6:
+        // Directions+items from room 6:
         room6.setGoNorth(room3);
         room6.setGoSouth(room9);
 
-        // Directions from room 7:
+        // Directions+items from room 7:
         room7.setGoNorth(room4);
         room7.setGoEast(room8);
 
-        // Directions from room 8:
+        // Directions+items from room 8:
         room8.setGoNorth(room5);
         room8.setGoEast(room9);
         room8.setGoWest(room7);
 
-        // Directions from room 9:
+        // Directions+items from room 9:
         room9.setGoNorth(room6);
         room9.setGoWest(room8);
 

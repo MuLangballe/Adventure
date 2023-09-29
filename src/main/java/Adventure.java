@@ -24,7 +24,7 @@ public String getCurrentPosition(){
 
 
 
-// metode til at returne current room name
+// metode til at returne current room directions... hvis vi vil ha det ;)
    /* public String roomDirections(String directions){
         if (directions.equals("go south")){
             return current.getGoSouth().getRoomName();
