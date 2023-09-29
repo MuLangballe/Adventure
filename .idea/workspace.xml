@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Storyline + items">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
+    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="map player">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
     </list>
-    <list id="ad138746-f1a7-4d2f-9f16-dd3114b3782d" name="Changes by Marie" comment="Changes by Marie">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
-    </list>
+    <list id="ad138746-f1a7-4d2f-9f16-dd3114b3782d" name="Changes by Marie" comment="Changes by Marie Adventure Map" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,46 +27,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/Player.java">
-      <ranges>
-        <range start1="2" end1="3" start2="2" end2="2" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="4" end1="4" start2="3" end2="4" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="8" end1="10" start2="8" end2="13" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="17" end1="18" start2="20" end2="21" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="20" end1="21" start2="23" end2="23" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="26" end1="27" start2="28" end2="29" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="28" end1="30" start2="30" end2="31" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="31" end1="60" start2="32" end2="49" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/Map.java">
-      <ranges>
-        <range start1="6" end1="15" start2="6" end2="15" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="19" end1="20" start2="19" end2="20" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="22" end1="22" start2="22" end2="23" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="23" end1="24" start2="24" end2="25" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="27" end1="28" start2="28" end2="29" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="30" end1="30" start2="31" end2="32" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="31" end1="32" start2="33" end2="34" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="35" end1="36" start2="37" end2="38" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="37" end1="37" start2="39" end2="40" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="38" end1="39" start2="41" end2="42" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="42" end1="43" start2="45" end2="46" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="46" end1="47" start2="49" end2="50" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="51" end1="52" start2="54" end2="55" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="54" end1="54" start2="57" end2="58" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/Room.java">
-      <ranges>
-        <range start1="0" end1="0" start2="0" end2="2" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="7" end1="7" start2="9" end2="10" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="8" end1="9" start2="11" end2="11" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="14" end1="14" start2="16" end2="20" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -92,6 +46,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/thea/Documents/Adventure",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -118,7 +73,8 @@
       <workItem from="1695648007672" duration="1000" />
       <workItem from="1695648224854" duration="1292000" />
       <workItem from="1695724653675" duration="10836000" />
-      <workItem from="1695886076953" duration="17400000" />
+      <workItem from="1695886076953" duration="17809000" />
+      <workItem from="1695979979287" duration="1943000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -160,7 +116,31 @@
       <option name="project" value="LOCAL" />
       <updated>1695969049177</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Storyline + items">
+      <option name="closed" value="true" />
+      <created>1695979392331</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695979392331</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changes by Marie Adventure Map">
+      <option name="closed" value="true" />
+      <created>1695979431860</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695979431860</updated>
+    </task>
+    <task id="LOCAL-00008" summary="map player">
+      <option name="closed" value="true" />
+      <created>1695979520429</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695979520429</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +164,8 @@
     <MESSAGE value="Klasser rettet" />
     <MESSAGE value="Changes by Marie" />
     <MESSAGE value="Storyline + items" />
-    <option name="LAST_COMMIT_MESSAGE" value="Storyline + items" />
+    <MESSAGE value="Changes by Marie Adventure Map" />
+    <MESSAGE value="map player" />
+    <option name="LAST_COMMIT_MESSAGE" value="map player" />
   </component>
 </project>

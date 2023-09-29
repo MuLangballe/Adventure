@@ -20,7 +20,7 @@ public class Map {
         // Directions+items from room 1:
         room1.setGoEast(room2);
         room1.setGoSouth(room4);
-        room1.addItem("Flashlight", "A small but effective flashlight.");
+        room1.addItem("Flashlight", "it's small but effective.");
 
         // Directions+items from room 2:
         room2.setGoEast(room3);
@@ -29,7 +29,7 @@ public class Map {
         // Directions+items from room 3:
         room3.setGoSouth(room6);
         room3.setGoWest(room2);
-        room3.addItem("Luminous mushroom", "You don't know what to use it for, but it's pretty");
+        room3.addItem("Luminous mushroom", "You don't know what to use it for, but it's pretty.");
 
         // Directions+items from room 4:
         room4.setGoNorth(room1);

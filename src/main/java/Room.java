@@ -19,6 +19,10 @@ public class Room {
         items.add(new Item(itemName, itemDescription));
     }
 
+    public ArrayList<Item> getItems() {
+        return items;
+    }
+
     public String getRoomName() {
         return roomName;
     }

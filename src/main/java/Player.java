@@ -7,8 +7,13 @@ public class Player {
     }
 
     public String getCurrentPosition() {
-        return current.getRoomName() + current.getDescription();
-
+        String temp = current.getRoomName() + current.getDescription();
+        if (current.getItems() != null) {
+            for (Item item : current.getItems()) {
+                temp +="\n You find: " + item.getItemName() + ". " + item.getItemDescription();
+            }
+        }
+        return temp;
     }
 
     public void moveToNextRoom(String nextRoom) {
