@@ -22,48 +22,34 @@ public class UserInterface {
             System.out.println("Here are your choices: \n " +
                     "Go south, north, east or west \n " +
                     "Look \n " +
-                            "Help \n " +
-                            "Exit \n ");
+                    "Help \n " +
+                    "Exit \n ");
 
             menuChoice = keyboard.nextLine().toLowerCase();
 
-
             switch (menuChoice) {
-                case "go south" :
+                case "go south":
                     adventureGame.moveToNextRoom(menuChoice);
                     break;
-                case "go north" :
+                case "go north":
                     adventureGame.moveToNextRoom(menuChoice);
                     break;
-                case "go east" :
+                case "go east":
                     adventureGame.moveToNextRoom(menuChoice);
                     break;
-                case "go west" :
+                case "go west":
                     adventureGame.moveToNextRoom(menuChoice);
                     break;
-                case "look" :
+                case "look":
                     System.out.println("You are now in: " + adventureGame.getCurrentPosition());
                     break;
-                case "help" :
+                case "help":
                     System.out.println("Use google!");
                     break;
             }
 
         } while (!menuChoice.equals("exit"));
-
-
-            // 1. Current position:
-            // Room objekt, med navn og beskrivelse.
-
-
-            // 2. Udskrive hvilke retninger man kan bevæge sig i fra current position/Room object.
-
-            // 3. Metode til at flytte sig fra ét rum til et andet (set):
-
-
-            // 4. Gentage processen
-
-
+    }
 }
 
 // 1. Current position:

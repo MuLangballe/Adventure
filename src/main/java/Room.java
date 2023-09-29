@@ -7,10 +7,10 @@ public class Room {
     private Room goEast;
 
     // private String beskrivelse;
-    // Skal klassen indeholde et ArrayList til at håndtere hvilke retninger man kan bevæge sig i fra det pågældende rum? - Nej
 
-    public Room (String roomName) {
+    public Room (String roomName, String description) {
         this.roomName = roomName;
+        this.description = description;
     }
 
     public String getRoomName() {
