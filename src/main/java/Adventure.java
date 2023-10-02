@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Adventure {
 private Map map;
 private Player player;
@@ -17,7 +19,18 @@ public void moveToNextRoom(String nextRoom){
 }
 
 public String getCurrentPosition(){
-    return player.getCurrentPosition();
+    return player.getCurrentPositionAndItems();
+}
+
+public boolean takeItem(String itemName) {
+    return player.takeItem(itemName);
+}
+
+public boolean dropItem(String itemName) {
+    return player.dropItem(itemName);
+}
+public ArrayList<Item> inventoryList() {
+    return player.getInventory();
 }
 
 }

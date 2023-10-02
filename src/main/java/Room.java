@@ -15,10 +15,6 @@ public class Room {
         this.description = description;
     }
 
-    public void addItem(String itemName, String itemDescription){
-        items.add(new Item(itemName, itemDescription));
-    }
-
     public ArrayList<Item> getItems() {
         return items;
     }
@@ -65,5 +61,20 @@ public class Room {
 
     public String getDescription() {
         return description;
+    }
+
+
+    public void addItem(Item item){
+        items.add(item);
+    }
+
+    public Item removeItem(String itemName) {
+        for (Item item : items) {
+            if (item.getItemName().equalsIgnoreCase(itemName)) {
+                items.remove(item);
+                return item;
+            }
+        }
+        return null;
     }
 }

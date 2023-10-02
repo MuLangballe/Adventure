@@ -17,10 +17,10 @@ public class UserInterface {
         String menuChoice;
 
         System.out.println("Welcome to adventure game!");
-        System.out.println("Your adventure starts in a forrest, looking into a cave. The entrance splits in two directions. A small flashlight appears just outside of the cave.\n");
+        System.out.println("Your adventure starts in a forrest, looking into a cave. The entrance splits in two directions. A small flashlight appears just outside of the cave.");
 
         do {
-            System.out.println("Here are your choices: \n " +
+            System.out.println("\nHere are your choices: \n " +
                     "Go south, north, east or west \n " +
                     "Inventory \n " +
                     "Take item \n " +
@@ -47,30 +47,49 @@ public class UserInterface {
                 case "go north":
                 case "north":
                 case "n":
-                    adventureGame.moveToNextRoom(menuChoice);
+                    adventureGame.moveToNextRoom("north");
                     break;
                 case "go east":
                 case "east":
                 case "e":
-                    adventureGame.moveToNextRoom(menuChoice);
+                    adventureGame.moveToNextRoom("east");
                     break;
                 case "go west":
                 case "west":
                 case "w":
-                    adventureGame.moveToNextRoom(menuChoice);
+                    adventureGame.moveToNextRoom("west");
                     break;
+                case "i":
                 case "inv":
                 case "inven":
                 case "inventory":
+                    String items = "";
+                    for (Item item : adventureGame.inventoryList()) {
+                        items += item.getItemName() + "\n";
+                    }
+                    System.out.println(items);
                     // Metode til at udskrive players items liste.
                     break;
                 case "take":
                 case "take item":
-                    // Metode til at add til players items liste
+                    System.out.println("Which item do you want to take?");
+                    boolean takenItem = adventureGame.takeItem(keyboard.nextLine());
+                    if (takenItem) {
+                        System.out.println("The item was added to you inventory.");
+                    } else {
+                        System.out.println("There's no item like this in the room.");
+                    }
                     break;
                 case "drop":
                 case "drop item":
-                    // Metode til at remove fra players items liste - evt. add tilbage til current room?
+                    System.out.println("Which item do you want to drop?");
+                    // + inventory liste
+                    boolean droppedItem = adventureGame.dropItem(keyboard.nextLine());
+                    if (droppedItem) {
+                        System.out.println("The item was left in the room.");
+                    } else {
+                        System.out.println("There's no item like this in your inventory");
+                    }
                     break;
                 case "look":
                     System.out.println("You are now in: " + adventureGame.getCurrentPosition());
