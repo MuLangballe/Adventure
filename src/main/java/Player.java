@@ -5,6 +5,9 @@ public class Player {
     private Room current;
     //private ArrayList<Item> inventory = new ArrayList<>();
 
+    //Metode: take item
+    //Metode: drop item
+
     public void setStartRoom(Room startRoom) {
         this.current = startRoom;
     }
@@ -54,4 +57,13 @@ public class Player {
                         }
                     }
                 }
+                /* Metode fra fronter:
+                public boolean takeItem(String itemName){
+        Item pickupFromRoom = current.removeItem(itemName);
+        if (pickupFromRoom != null) {
+            inventory.add(pickupFromRoom);
+            return true;
+        }
+        return false;
+                }*/
             }

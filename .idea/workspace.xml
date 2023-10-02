@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="map player">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="opdateret menuen">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
     </list>
     <list id="ad138746-f1a7-4d2f-9f16-dd3114b3782d" name="Changes by Marie" comment="Changes by Marie Adventure Map" />
+    <list id="02963190-e416-4afb-9536-ae528bf6fdb0" name="Changes by thea" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +27,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/Player.java">
+      <ranges>
+        <range start1="6" end1="6" start2="6" end2="9" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="22" end1="23" start2="25" end2="26" changelist="02963190-e416-4afb-9536-ae528bf6fdb0" />
+        <range start1="56" end1="56" start2="59" end2="68" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -136,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695979520429</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="opdateret menuen">
+      <option name="closed" value="true" />
+      <created>1696251528254</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696251528254</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +183,7 @@
     <MESSAGE value="Storyline + items" />
     <MESSAGE value="Changes by Marie Adventure Map" />
     <MESSAGE value="map player" />
-    <option name="LAST_COMMIT_MESSAGE" value="map player" />
+    <MESSAGE value="opdateret menuen" />
+    <option name="LAST_COMMIT_MESSAGE" value="opdateret menuen" />
   </component>
 </project>
