@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+
 public class Player {
 
     private Room current;
+    //private ArrayList<Item> inventory = new ArrayList<>();
 
     public void setStartRoom(Room startRoom) {
         this.current = startRoom;

@@ -10,8 +10,7 @@ public class UserInterface {
         this.keyboard = new Scanner(System.in);
 
     }
-    // TODO: del 2 nye kommandoer: inventory, take, drop.
-    // TODO: brugerfladen udvides, så man sammen med beskrivelsen af et rum, får en liste over de ting der ligger i rummet
+
     public void startGame() {
         adventureGame.buildMap();
 
@@ -23,6 +22,9 @@ public class UserInterface {
         do {
             System.out.println("Here are your choices: \n " +
                     "Go south, north, east or west \n " +
+                    "Inventory \n " +
+                    "Take item \n " +
+                    "Drop item \n " +
                     "Look \n " +
                     "Help \n " +
                     "Exit \n ");
@@ -31,16 +33,37 @@ public class UserInterface {
 
             switch (menuChoice) {
                 case "go south":
+                case "south":
+                case "s":
                     adventureGame.moveToNextRoom(menuChoice);
                     break;
                 case "go north":
+                case "north":
+                case "n":
                     adventureGame.moveToNextRoom(menuChoice);
                     break;
                 case "go east":
+                case "east":
+                case "e":
                     adventureGame.moveToNextRoom(menuChoice);
                     break;
                 case "go west":
+                case "west":
+                case "w":
                     adventureGame.moveToNextRoom(menuChoice);
+                    break;
+                case "inv":
+                case "inven":
+                case "inventory":
+                    // Metode til at udskrive players items liste.
+                    break;
+                case "take":
+                case "take item":
+                    // Metode til at add til players items liste
+                    break;
+                case "drop":
+                case "drop item":
+                    // Metode til at remove fra players items liste - evt. add tilbage til current room?
                     break;
                 case "look":
                     System.out.println("You are now in: " + adventureGame.getCurrentPosition());
