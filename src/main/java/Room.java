@@ -19,6 +19,25 @@ public class Room {
         items.add(new Item(itemName, itemDescription));
     }
 
+    public void addItem(Item item){
+        items.add(item);
+    }
+
+    public Item findItem(String itemName){
+        Item item = null;
+        for (Item i : items){
+            if (i.getItemName().toLowerCase().contains(itemName.toLowerCase())){
+                item = i;
+            }
+        }
+        return item;
+    }
+    public Item removeItem(String itemName){
+        Item item = findItem(itemName);
+        items.remove(item); //TODO: håndtering af hvis man ikke kan finde objektet
+        return item;
+    }
+
     public ArrayList<Item> getItems() {
         return items;
     }

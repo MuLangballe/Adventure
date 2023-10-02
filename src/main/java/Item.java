@@ -14,4 +14,12 @@ public class Item {
     public String getItemName() {
         return itemName;
     }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "itemName='" + itemName + '\'' +
+                ", itemDescription='" + itemDescription + '\'' +
+                '}';
+    }
 }
