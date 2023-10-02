@@ -32,10 +32,17 @@ public class UserInterface {
             menuChoice = keyboard.nextLine().toLowerCase();
 
             switch (menuChoice) {
+
+                // split
                 case "go south":
                 case "south":
                 case "s":
-                    adventureGame.moveToNextRoom(menuChoice);
+                   // String[] sentence = menuChoice.split(" ");
+                   // if (sentence.length > 1) {
+                       // menuChoice = sentence[1];
+                   // }
+                    adventureGame.moveToNextRoom("south");
+                    // brugerdialog. lav movetonextroom til boolean - og lav ui ud fra true false.
                     break;
                 case "go north":
                 case "north":

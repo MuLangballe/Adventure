@@ -23,7 +23,9 @@ public class Player {
     }
 
     public void moveToNextRoom(String nextRoom) {
-        if (nextRoom.equalsIgnoreCase("go south")) {
+
+        // flyt brugerdialog til UI omskriv til at returnere boolean
+        if (nextRoom.equalsIgnoreCase("south")) {
             Room wantedRoom = current.getGoSouth();
             if (wantedRoom != null) {
                 current = wantedRoom;
