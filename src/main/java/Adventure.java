@@ -32,13 +32,17 @@ public class Adventure {
         return player.getInventory();
     }
 
-        public void dropItem(String menuChoice) {
+    public void dropItem(String menuChoice) {
         Item item = player.removeItem(menuChoice);
         player.getCurrent().addItem(item);
     }
 
-    public int healthbar(){
+    public int healthbar() {
         return player.healthbar();
+    }
+
+    public EatMessage eatMessage(String itemName){
+        return player.eatItem(itemName);
     }
 
 

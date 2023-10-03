@@ -20,16 +20,17 @@ public class Map {
         // Directions+items from room 1:
         room1.setGoEast(room2);
         room1.setGoSouth(room4);
-        room1.addItem(new Item("Flashlight", "it's small but effective."));
+        room1.addItem(new Item("Flashlight", "it's small but effective.", EatMessage.CANT_EAT));
 
         // Directions+items from room 2:
         room2.setGoEast(room3);
         room2.setGoWest(room1);
+        room2.addItem(new Food("Apple", "beautiful red apple", EatMessage.EAT, 15));
 
         // Directions+items from room 3:
         room3.setGoSouth(room6);
         room3.setGoWest(room2);
-        room3.addItem(new Item ("Luminous mushroom", "You don't know what to use it for, but it's pretty."));
+        room3.addItem(new Food ("Luminous mushroom", "You don't know what to use it for, but it's pretty.", EatMessage.EAT, -20));
 
         // Directions+items from room 4:
         room4.setGoNorth(room1);
@@ -37,7 +38,7 @@ public class Map {
 
         // Directions+items from room 5:
         room5.setGoSouth(room8);
-        room5.addItem(new Item ("Diamonds", "Shiny!"));
+        room5.addItem(new Item ("Diamonds", "Shiny!", EatMessage.CANT_EAT));
 
         // Directions+items from room 6:
         room6.setGoNorth(room3);
@@ -55,7 +56,7 @@ public class Map {
         // Directions+items from room 9:
         room9.setGoNorth(room6);
         room9.setGoWest(room8);
-        room9.addItem(new Item("Sword", "Sharp silver sword with A LOT of diamonds"));
+        room9.addItem(new Item("Sword", "Sharp silver sword with A LOT of diamonds", EatMessage.CANT_EAT));
 
     }
 

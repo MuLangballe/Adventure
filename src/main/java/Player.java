@@ -1,10 +1,26 @@
 import java.util.ArrayList;
 
 public class Player {
-
+    private int healthPoints;
     public int healthbar() {
-        int health = 50;
-        return health;
+        int healthPoints = 50;
+        return healthPoints;
+    }
+
+    public int getHealthPoints() {
+        return healthPoints;
+    }
+
+
+    public EatMessage eatItem(String itemName){
+        Item item = findItem(itemName);
+
+       /* if (item instanceof Food){
+            var value =  ((Food) item).getHealthPoints();
+            healthPoints += value;
+            removeItem(itemName);
+        }*/
+        return item.getEatReturnMessage();
     }
 
     public Room getCurrent() {
@@ -54,9 +70,6 @@ public class Player {
 
     // Health metode
     // Startværdi, fx 5 healthpoints
-
-
-
 
     // udskrive nuværende health points
 
