@@ -5,7 +5,7 @@ public class UserInterface {
     private Adventure adventureGame;
     private Scanner keyboard;
 
-    public UserInterface (Adventure adventureGame) {
+    public UserInterface(Adventure adventureGame) {
         this.adventureGame = adventureGame;
         this.keyboard = new Scanner(System.in);
 
@@ -37,10 +37,10 @@ public class UserInterface {
                 case "go south":
                 case "south":
                 case "s":
-                   // String[] sentence = menuChoice.split(" ");
-                   // if (sentence.length > 1) {
-                       // menuChoice = sentence[1];
-                   // }
+                    // String[] sentence = menuChoice.split(" ");
+                    // if (sentence.length > 1) {
+                    // menuChoice = sentence[1];
+                    // }
                     adventureGame.moveToNextRoom("south");
                     // brugerdialog. lav movetonextroom til boolean - og lav ui ud fra true false.
                     break;
