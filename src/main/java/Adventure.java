@@ -36,4 +36,10 @@ public class Adventure {
         Item item = player.removeItem(menuChoice);
         player.getCurrent().addItem(item);
     }
+
+    public int healthbar(){
+        return player.healthbar();
+    }
+
+
 }
