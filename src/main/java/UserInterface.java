@@ -28,6 +28,7 @@ public class UserInterface {
                      Take item\s
                      Drop item\s
                      Look\s
+                     Health\s
                      Help\s
                      Exit\s
                     \s""");
@@ -57,6 +58,9 @@ public class UserInterface {
                      for (Item i : items){
                          System.out.println(i);
                      }
+                     break;
+                 case "health":
+                     System.out.println("Healthpoint balance: " + ADVENTURE_GAME.healthbar());
                      break;
                  case "help":
                      System.out.println("go google");
