@@ -2,90 +2,85 @@ import java.util.ArrayList;
 
 public class Player {
 
-    private Room currentRoom;
+    public Room getCurrent() {
+        return current;
+    }
+
+    private Room current;
     private ArrayList<Item> inventory = new ArrayList<>();
 
- /*   public Player() {
-        inventory.add(new Item("kuki", "kuki"));
-    }*/
-
     public void setStartRoom(Room startRoom) {
-        this.currentRoom = startRoom;
+        this.current = startRoom;
     }
 
-    public String getCurrentPositionAndItems() {
-        String currentRoomNameDescriptionAndItems = currentRoom.getRoomName() + currentRoom.getDescription();
-        if (currentRoom.getItems() != null) {
-            for (Item item : currentRoom.getItems()) {
-                currentRoomNameDescriptionAndItems += "\nYou see: " + item.getItemName() + ". " + item.getItemDescription();
+    public String getCurrentPosition() {
+        String temp = current.getRoomName() + current.getDescription();
+        if (current.getItems() != null) {
+            for (Item item : current.getItems()) {
+                temp += "\n You find: " + item.getItemName() + ". " + item.getItemDescription();
             }
         }
-        return currentRoomNameDescriptionAndItems;
+        return temp;
     }
 
-    public void moveToNextRoom(String nextRoom) {
-
-        //TODO flyt brugerdialog til UI omskriv til at returnere boolean
-        if (nextRoom.equalsIgnoreCase("south")) {
-            Room wantedRoom = currentRoom.getGoSouth();
-            if (wantedRoom != null) {
-                currentRoom = wantedRoom;
-                System.out.println("you are now in " + getCurrentPositionAndItems());
-            } else {
-                System.out.println("No room in that direction.");
-            }
-        } else if (nextRoom.equalsIgnoreCase("north")) {
-            Room wantedRoom = currentRoom.getGoNorth();
-            if (wantedRoom != null) {
-                currentRoom = wantedRoom;
-                System.out.println("you are now in " + getCurrentPositionAndItems());
-            } else {
-                System.out.println("No room in that direction.");
-            }
-        } else if (nextRoom.equalsIgnoreCase("east")) {
-            Room wantedRoom = currentRoom.getGoEast();
-            if (wantedRoom != null) {
-                currentRoom = wantedRoom;
-                System.out.println("you are now in " + getCurrentPositionAndItems());
-            } else {
-                System.out.println("No room in that direction.");
-            }
-        } else if (nextRoom.equalsIgnoreCase("west")) {
-            Room wantedRoom = currentRoom.getGoWest();
-            if (wantedRoom != null) {
-                currentRoom = wantedRoom;
-                System.out.println("you are now in " + getCurrentPositionAndItems());
-            } else {
-                System.out.println("No room in that direction.");
-            }
-        }
+    public void addToInventory(Item item) {
+        inventory.add(item);
     }
 
     public ArrayList<Item> getInventory() {
         return inventory;
     }
 
-    public boolean takeItem(String itemName) {
-        Item pickupFromRoom = currentRoom.removeItem(itemName);
-        if (pickupFromRoom != null) {
-            inventory.add(pickupFromRoom);
-            return true;
+    public Item findItem(String itemName) {
+        Item item = null;
+        for (Item i : inventory) {
+            if (i.getItemName().toLowerCase().contains(itemName.toLowerCase())) {
+                item = i;
+            }
+        }
+        return item;
+    }
+
+    public Item removeItem(String itemName) {
+        Item item = findItem(itemName);
+        inventory.remove(item); //TODO: håndtering af hvis man ikke kan finde objektet
+        return item;
+    }
+
+    public boolean moveToNextRoom(String nextRoom) {
+        if (nextRoom.equalsIgnoreCase("south")) {
+            Room wantedRoom = current.getGoSouth();
+            if (wantedRoom != null) {
+                current = wantedRoom;
+                return true;
+            } else {
+                return false;
+            }
+        } else if (nextRoom.equalsIgnoreCase("north")) {
+            Room wantedRoom = current.getGoNorth();
+            if (wantedRoom != null) {
+                current = wantedRoom;
+                return true;
+            } else {
+                return false;
+            }
+        } else if (nextRoom.equalsIgnoreCase("east")) {
+            Room wantedRoom = current.getGoEast();
+            if (wantedRoom != null) {
+                current = wantedRoom;
+                return true;
+            } else {
+                return false;
+            }
+        } else if (nextRoom.equalsIgnoreCase("west")) {
+            Room wantedRoom = current.getGoWest();
+            if (wantedRoom != null) {
+                current = wantedRoom;
+                return true;
+            } else {
+                return false;
+            }
         }
         return false;
     }
-
-    public boolean dropItem(String itemName) {
-        // tjek om item findes i inventory
-        for (Item inventoryItem : inventory) {
-            if (inventoryItem.getItemName().equalsIgnoreCase(itemName)) {
-                // hvis den findes, fjern fra inventory og add til rummet:
-                inventory.remove(itemName);
-                currentRoom.addItem(inventoryItem);
-                return true;
-            }
-        }
-            // hvis den ikke findes i inventory:
-                return false;
-    }
 }
-

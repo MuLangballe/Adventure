@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="takeItem&#10;dropItem&#10;inventoryList&#10;+ rettet lidt i UI">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
-    </list>
+    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Delopgave 2 færdig (find, take, drop, inventory)&#10;justering af UI og moveToNextRoom" />
     <list id="ad138746-f1a7-4d2f-9f16-dd3114b3782d" name="Changes by Marie" comment="Changes by Marie Adventure Map" />
-    <list id="02963190-e416-4afb-9536-ae528bf6fdb0" name="Changes by thea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +44,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "TheaAdventure__InventoryManagement",
+    "git-widget-placeholder": "Marie/InventoryManagement",
     "last_opened_file_path": "/Users/thea/Documents/Adventure",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -64,6 +60,20 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Adventure" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -151,23 +161,31 @@
       <option name="project" value="LOCAL" />
       <updated>1696251528254</updated>
     </task>
-    <task id="LOCAL-00010" summary="takeItem&#10;dropItem&#10;inventoryList&#10;+ rettet lidt i UI">
+    <task id="LOCAL-00010" summary="justering af south">
       <option name="closed" value="true" />
-      <created>1696281847014</created>
+      <created>1696254300164</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1696281847014</updated>
+      <updated>1696254300164</updated>
     </task>
-    <task id="LOCAL-00011" summary="takeItem&#10;dropItem&#10;inventoryList&#10;+ rettet lidt i UI">
+    <task id="LOCAL-00011" summary="Changes by thea">
       <option name="closed" value="true" />
-      <created>1696329678739</created>
+      <created>1696254311151</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1696329678739</updated>
+      <updated>1696254311151</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Delopgave 2 færdig (find, take, drop, inventory)&#10;justering af UI og moveToNextRoom">
+      <option name="closed" value="true" />
+      <created>1696275885064</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1696275885064</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +212,9 @@
     <MESSAGE value="Changes by Marie Adventure Map" />
     <MESSAGE value="map player" />
     <MESSAGE value="opdateret menuen" />
-    <MESSAGE value="takeItem&#10;dropItem&#10;inventoryList&#10;+ rettet lidt i UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="takeItem&#10;dropItem&#10;inventoryList&#10;+ rettet lidt i UI" />
+    <MESSAGE value="justering af south" />
+    <MESSAGE value="Changes by thea" />
+    <MESSAGE value="Delopgave 2 færdig (find, take, drop, inventory)&#10;justering af UI og moveToNextRoom" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delopgave 2 færdig (find, take, drop, inventory)&#10;justering af UI og moveToNextRoom" />
   </component>
 </project>
