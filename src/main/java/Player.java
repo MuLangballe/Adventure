@@ -1,7 +1,10 @@
 import java.util.ArrayList;
 
 public class Player {
+
     private int healthPoints;
+
+    //TODO: lave player constructor, så healthpoint kan settes.
     public int healthbar() {
         int healthPoints = 50;
         return healthPoints;
@@ -11,15 +14,24 @@ public class Player {
         return healthPoints;
     }
 
+    public void setHealthPoints(int healthPoints) {
+        this.healthPoints = healthPoints;
+    }
+
 
     public EatMessage eatItem(String itemName){
         Item item = findItem(itemName);
-
-       /* if (item instanceof Food){
-            var value =  ((Food) item).getHealthPoints();
-            healthPoints += value;
+        if (item instanceof Food){
+            int healthPoints1 =  ((Food) item).getHealthPoints();
+            setHealthPoints(50); //Nu virker det .. men det skal flyttes!!!!!!
+            healthPoints += healthPoints1;
             removeItem(itemName);
-        }*/
+        } else if (!(item instanceof Food)){
+            return EatMessage.CANT_EAT;
+        }
+        else if (item == null){
+            return EatMessage.NOT_FOUND;
+        }
         return item.getEatReturnMessage();
     }
 

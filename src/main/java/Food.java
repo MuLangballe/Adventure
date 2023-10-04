@@ -9,8 +9,4 @@ public class Food extends Item{
         super(itemName, itemDesciption, eatReturnMessage);
         this.healthPoints = healthPoints;
     }
-
-    // Ved ikke om jeg skal lave det i food klassen. men den kan altid rykkes.
-
-
 }
