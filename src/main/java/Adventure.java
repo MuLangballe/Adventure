@@ -7,7 +7,7 @@ public class Adventure {
 
     public Adventure() {
         this.map = new Map();
-        this.player = new Player();
+        this.player = new Player(50);
     }
 
     public void buildMap() {
@@ -33,16 +33,24 @@ public class Adventure {
     }
 
     public void dropItem(String menuChoice) {
-        Item item = player.removeItem(menuChoice);
+        Item item = player.removeItemFromInventory(menuChoice);
         player.getCurrent().addItem(item);
     }
 
-    public int healthbar() {
+   /* public int healthbar() {
         return player.healthbar();
-    }
+    }*/
 
     public EatMessage eatMessage(String itemName){
         return player.eatItem(itemName);
+    }
+
+    public int getHealthPoints(){
+        return player.getHealthPoints();
+    }
+
+    public EquipMessage equipMessage(String itemName){
+        return player.equipItem(itemName);
     }
 
 

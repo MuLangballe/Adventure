@@ -2,6 +2,7 @@ public class Item {
     private String itemName;
     private String itemDescription;
     private EatMessage eatReturnMessage;
+    private EquipMessage equipReturnMessage;
 
     public Item(String itemName, String itemDesciption, EatMessage eatReturnMessage){
         this.itemName = itemName;
@@ -19,6 +20,10 @@ public class Item {
 
     public EatMessage getEatReturnMessage() {
         return eatReturnMessage;
+    }
+
+    public EquipMessage getEquipReturnMessage(){
+        return equipReturnMessage;
     }
 
     @Override

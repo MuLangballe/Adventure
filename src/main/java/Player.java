@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 
 public class Player {
-
     private int healthPoints;
+    private Room current;
+    private ArrayList<Item> inventory = new ArrayList<>();
+    private Weapon currentWeapon;
 
-    //TODO: lave player constructor, så healthpoint kan settes.
-    public int healthbar() {
-        int healthPoints = 50;
-        return healthPoints;
+    public Player(int healthPoints){
+        this.healthPoints = healthPoints;
     }
 
     public int getHealthPoints() {
@@ -22,10 +22,10 @@ public class Player {
     public EatMessage eatItem(String itemName){
         Item item = findItem(itemName);
         if (item instanceof Food){
-            int healthPoints1 =  ((Food) item).getHealthPoints();
-            setHealthPoints(50); //Nu virker det .. men det skal flyttes!!!!!!
+            int healthPoints1 =  ((Food) item).getHealthPoints(); //downcast
             healthPoints += healthPoints1;
-            removeItem(itemName);
+            removeItemFromInventory(itemName);
+            return EatMessage.EAT;
         } else if (!(item instanceof Food)){
             return EatMessage.CANT_EAT;
         }
@@ -38,9 +38,6 @@ public class Player {
     public Room getCurrent() {
         return current;
     }
-
-    private Room current;
-    private ArrayList<Item> inventory = new ArrayList<>();
 
     public void setStartRoom(Room startRoom) {
         this.current = startRoom;
@@ -74,7 +71,7 @@ public class Player {
         return item;
     }
 
-    public Item removeItem(String itemName) {
+    public Item removeItemFromInventory(String itemName) {
         Item item = findItem(itemName);
         inventory.remove(item); //TODO: håndtering af hvis man ikke kan finde objektet
         return item;
@@ -88,8 +85,6 @@ public class Player {
     // tilføje/fjerne health via eat-metode
 
     // fjerne health, enemies
-
-
 
     public boolean moveToNextRoom(String nextRoom) {
         if (nextRoom.equalsIgnoreCase("south")) {

@@ -5,8 +5,8 @@ public class Food extends Item{
 
     private int healthPoints;
 
-    public Food (String itemName, String itemDesciption, EatMessage eatReturnMessage, int healthPoints){
-        super(itemName, itemDesciption, eatReturnMessage);
+    public Food (String itemName, String itemDesciption, EatMessage eatReturnMessage, EquipMessage equipReturnMessage, int healthPoints){
+        super(itemName, itemDesciption, eatReturnMessage, equipReturnMessage);
         this.healthPoints = healthPoints;
     }
 }

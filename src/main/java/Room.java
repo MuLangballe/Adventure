@@ -15,8 +15,8 @@ public class Room {
         this.description = description;
     }
 
-    public void addItem(String itemName, String itemDescription, EatMessage eatMessage){
-        items.add(new Item(itemName, itemDescription, eatMessage));
+    public void addItem(String itemName, String itemDescription, EatMessage eatMessage, EquipMessage equipMessage){
+        items.add(new Item(itemName, itemDescription, eatMessage, equipMessage));
     }
 
     public void addItem(Item item){

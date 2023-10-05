@@ -29,6 +29,8 @@ public class UserInterface {
                      Look\s
                      Eat\s
                      Health\s
+                     Equip\s
+                     Attack\s
                      Help\s
                      Exit\s
                     \s""");
@@ -59,26 +61,36 @@ public class UserInterface {
                         case EAT -> System.out.println("Yuumm!");
                         case CANT_EAT -> System.out.println("no no no. You can't eat that! You crazy.");
                         case NOT_FOUND -> System.out.println("Can't find the requested item.");
-                        }
-                        case "inventory":
-                            ArrayList<Item> items = ADVENTURE_GAME.getPlayerInventory();
-                            for (Item i : items) {
-                                System.out.println(i);
-                            }
-                            break;
-                        case "health":
-                            System.out.println("Healthpoint balance: " + ADVENTURE_GAME.healthbar());
-                            if (ADVENTURE_GAME.healthbar() >= 50) {
-                                System.out.println("You look healthy. Keep up the good work!");
-                            }
-                            break;
-                        case "help":
-                            System.out.println("go google");
-                            break;
-
                     }
+                case "inventory":
+                    ArrayList<Item> items = ADVENTURE_GAME.getPlayerInventory();
+                    for (Item i : items) {
+                        System.out.println(i);
+                    }
+                    break;
+                case "health":
+                    System.out.println("Healthpoint balance: " + ADVENTURE_GAME.getHealthPoints());
+                    if (ADVENTURE_GAME.getHealthPoints() >= 50) {
+                        System.out.println("You look healthy. Keep up the good work!");
+                    }
+                    break;
+                case "equip":
+                    EquipMessage equipMessage = ADVENTURE_GAME.equipMessage(words[1]);
+                    switch (equipMessage){
+                        case EQUIP -> System.out.println("Equipped!");
+                        case NOT_A_WEAPON -> System.out.println("Ooops. that is not useful for a weapon.");
+                        case WEAPON_NOT_FOUND -> System.out.println("Weapon not found!");
+                    }
+                    break;
+                case "attack":
+                    break;
+                case "help":
+                    System.out.println("go google");
+                    break;
+
             }
-            while (!menuChoice.equals("exit")) ;
         }
+        while (!menuChoice.equals("exit"));
     }
+}
 
