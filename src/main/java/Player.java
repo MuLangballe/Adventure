@@ -18,7 +18,6 @@ public class Player {
         this.healthPoints = healthPoints;
     }
 
-
     public EatMessage eatItem(String itemName){
         Item item = findItem(itemName);
         if (item instanceof Food){
@@ -33,6 +32,33 @@ public class Player {
             return EatMessage.NOT_FOUND;
         }
         return item.getEatReturnMessage();
+    }
+
+    // Evt. tilføje metode til at bruge eatItem uden at adde til inventory først.
+
+    public EquipMessage equipItem(String itemName){
+        Item item = findItem(itemName);
+        if (item instanceof Weapon){
+            inventory.remove(item); //TODO lige pt fjerner den våbenet
+            currentWeapon = (Weapon) item;
+            return EquipMessage.EQUIP;
+
+            // Måske tilføje parameter på Player så man kan "Equippe" ét våben til spilleren
+        } else if (!(item instanceof Weapon)){
+            return EquipMessage.NOT_A_WEAPON;
+        }
+        else if (item == null){
+            return EquipMessage.WEAPON_NOT_FOUND;
+        }
+        return item.getEquipReturnMessage();
+    }
+
+    public AttackMessage attack(){
+        if(currentWeapon != null){
+           return currentWeapon.attack();
+        }
+        return AttackMessage.NO_WEAPON_EQUIPPED;
+
     }
 
     public Room getCurrent() {

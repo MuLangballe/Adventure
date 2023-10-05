@@ -4,4 +4,9 @@ public class MeleeWeapon extends Weapon{
         super(itemName, itemDescription, eatMessage, equipReturnMessage, damage);
 
     }
+
+    @Override
+    public AttackMessage attack(){
+        return AttackMessage.ATTACK_SUCCESFULL;
+    }
 }

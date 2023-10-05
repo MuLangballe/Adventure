@@ -4,10 +4,11 @@ public class Item {
     private EatMessage eatReturnMessage;
     private EquipMessage equipReturnMessage;
 
-    public Item(String itemName, String itemDesciption, EatMessage eatReturnMessage){
+    public Item(String itemName, String itemDesciption, EatMessage eatReturnMessage, EquipMessage equipReturnMessage){
         this.itemName = itemName;
         this.itemDescription = itemDesciption;
         this.eatReturnMessage = eatReturnMessage;
+        this.equipReturnMessage = equipReturnMessage;
     }
 
     public String getItemDescription() {
