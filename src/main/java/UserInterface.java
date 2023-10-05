@@ -83,6 +83,12 @@ public class UserInterface {
                     }
                     break;
                 case "attack":
+                    AttackMessage attackMessage = ADVENTURE_GAME.attackMessage();
+                    switch (attackMessage){
+                        case ATTACK_SUCCESFULL -> System.out.println("Attack succesfull! Good job!");
+                        case OUT_OF_AMMO -> System.out.println("OH NO! Out of ammo!");
+                        case NO_WEAPON_EQUIPPED -> System.out.println("No weapon equipped!");
+                    }
                     break;
                 case "help":
                     System.out.println("go google");

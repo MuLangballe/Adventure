@@ -76,15 +76,7 @@ public class Player {
         inventory.remove(item); //TODO: håndtering af hvis man ikke kan finde objektet
         return item;
     }
-
-    // Health metode
-    // Startværdi, fx 5 healthpoints
-
-    // udskrive nuværende health points
-
-    // tilføje/fjerne health via eat-metode
-
-    // fjerne health, enemies
+    
 
     public boolean moveToNextRoom(String nextRoom) {
         if (nextRoom.equalsIgnoreCase("south")) {

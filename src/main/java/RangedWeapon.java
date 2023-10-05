@@ -7,8 +7,16 @@ public class RangedWeapon extends Weapon{
         this.remainingShots = remainingShots;
     }
 
+
     @Override
-    public int remainingUses() {
-        return super.remainingUses();
+    public AttackMessage attack() {
+        // antal skud minus 1 for hvert attack
+        if (remainingShots > 0) {
+            remainingShots = remainingShots - 1;
+            return AttackMessage.ATTACK_SUCCESFULL;
+
+        }
+        return AttackMessage.OUT_OF_AMMO;
     }
+
 }

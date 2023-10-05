@@ -12,5 +12,6 @@ public abstract class Weapon extends Item{
     }
 
 
+    public abstract AttackMessage attack();
 
 }

@@ -1,0 +1,3 @@
+public enum AttackMessage {
+    NO_WEAPON_EQUIPPED, OUT_OF_AMMO, ATTACK_SUCCESFULL
+}

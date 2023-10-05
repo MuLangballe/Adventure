@@ -53,5 +53,9 @@ public class Adventure {
         return player.equipItem(itemName);
     }
 
+    public AttackMessage attackMessage(){
+        return player.attack();
+    }
+
 
 }
