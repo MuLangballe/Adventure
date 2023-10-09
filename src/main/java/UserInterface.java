@@ -21,16 +21,16 @@ public class UserInterface {
 
         do {
             System.out.println("""
-                    Here are your choices:\s
-                     Go south, north, east or west\s
-                     Inventory\s
-                     Take item\s
-                     Drop item\s
-                     Look\s
+                    \nHere are your choices:\s
+                     Go south, north, east or west (g)\s
+                     Inventory (inv or i)\s
+                     Take item (t)\s
+                     Drop item (d)\s
+                     Look (l)\s
                      Eat\s
-                     Health\s
-                     Equip\s
-                     Attack\s
+                     Health (h)\s
+                     Equip (e)\s
+                     Attack (a)\s
                      Help\s
                      Exit\s
                     \s""");
@@ -51,7 +51,8 @@ public class UserInterface {
                         System.out.println("There's no item like this in the room.");
                     }
                     break;
-                case "move":
+                case "go":
+                case "g":
                     if (ADVENTURE_GAME.moveToNextRoom(words[1])) {
                         System.out.println("you are now in " + ADVENTURE_GAME.getCurrentPosition());
                     } else {
@@ -69,6 +70,7 @@ public class UserInterface {
 
                     break;
                 case "look":
+                case "l":
                     System.out.println("you are now in " + ADVENTURE_GAME.getCurrentPosition());
                     break;
                 case "eat":
@@ -78,7 +80,10 @@ public class UserInterface {
                         case CANT_EAT -> System.out.println("no no no. You can't eat that! You crazy.");
                         case NOT_FOUND -> System.out.println("Can't find the requested item.");
                     }
+                    break;
                 case "inventory":
+                case "inv":
+                case "i":
                     ArrayList<Item> items = ADVENTURE_GAME.getPlayerInventory();
                     if(items.isEmpty()) {
                         System.out.println("Your backpack is empty!");
@@ -90,12 +95,14 @@ public class UserInterface {
                     }
                     break;
                 case "health":
+                case "h":
                     System.out.println("Healthpoint balance: " + ADVENTURE_GAME.getHealthPoints());
                     if (ADVENTURE_GAME.getHealthPoints() >= 50) {
                         System.out.println("You look healthy. Keep up the good work!");
                     }
                     break;
                 case "equip":
+                case "e":
                     EquipMessage equipMessage = ADVENTURE_GAME.equipMessage(words[1]);
                     switch (equipMessage){
                         case EQUIP -> System.out.println("Equipped!");
@@ -104,6 +111,7 @@ public class UserInterface {
                     }
                     break;
                 case "attack":
+                case "a":
                     AttackMessage attackMessage = ADVENTURE_GAME.attackMessage();
                     switch (attackMessage){
                         case ATTACK_SUCCESFULL -> System.out.println("Attack succesfull! Good job!");
@@ -114,6 +122,8 @@ public class UserInterface {
                 case "help":
                     System.out.println("go google");
                     break;
+                default:
+                    System.out.println("What? i don't understand that gibberish. Try again!");
 
             }
         }

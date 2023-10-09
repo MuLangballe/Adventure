@@ -15,15 +15,15 @@ public class Room {
         this.description = description;
     }
 
-    public void addItem(String itemName, String itemDescription, EatMessage eatMessage, EquipMessage equipMessage){
+    /*public void addItem(String itemName, String itemDescription, EatMessage eatMessage, EquipMessage equipMessage){
         items.add(new Item(itemName, itemDescription, eatMessage, equipMessage));
-    }
+    }*/
 
     public void addItem(Item item){
         items.add(item);
     }
 
-    public Item findItem(String itemName){
+    public Item findItemInRoom(String itemName){
         Item item = null;
         for (Item i : items){
             if (i.getItemName().toLowerCase().contains(itemName.toLowerCase())){
@@ -32,8 +32,8 @@ public class Room {
         }
         return item;
     }
-    public Item removeItem(String itemName){
-        Item item = findItem(itemName);
+    public Item removeItemFromRoom(String itemName){
+        Item item = findItemInRoom(itemName);
         items.remove(item); //TODO: håndtering af hvis man ikke kan finde objektet
         return item;
     }
@@ -44,10 +44,6 @@ public class Room {
 
     public String getRoomName() {
         return roomName;
-    }
-
-    public void setRoomName(String roomName) {
-        this.roomName = roomName;
     }
 
     public Room getGoNorth() {

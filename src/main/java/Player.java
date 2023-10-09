@@ -39,7 +39,7 @@ public class Player {
     public EatMessage eatItem(String itemName){
         Item item = findItemInInventory(itemName);
         if (item instanceof Food){
-            int healthPoints1 =  ((Food) item).getHealthPoints(); //downcast
+            int healthPoints1 =  ((Food) item).getHealthPoints();
             healthPoints += healthPoints1;
             removeItemFromInventory(itemName);
             return EatMessage.EAT;
@@ -76,12 +76,8 @@ public class Player {
            return currentWeapon.attack();
         }
         return AttackMessage.NO_WEAPON_EQUIPPED;
-
     }
 
-    public Room getCurrent() {
-        return current;
-    }
 
     public void setStartRoom(Room startRoom) {
         this.current = startRoom;
@@ -97,9 +93,9 @@ public class Player {
         return temp;
     }
 
-    public void addToInventory(Item item) {
+    /*public void addToInventory(Item item) {
         inventory.add(item);
-    }
+    }*/
 
     public ArrayList<Item> getInventory() {
         return inventory;
