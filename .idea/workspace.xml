@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Delopgave 4. Weapon classes og equip.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AdventureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AdventureTest.java" afterDir="false" />
     </list>
-    <list id="ad138746-f1a7-4d2f-9f16-dd3114b3782d" name="Changes by Marie" comment="Changes by Marie Adventure Map">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
+    <list id="0612b03b-5029-40bc-88f2-c9d1a4be9580" name="Changes by Marie" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
     <list id="8bf2829c-4441-4511-bda4-e1d05b17d8c9" name="Changes by thea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,41 +38,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/UserInterface.java">
+    <file path="$PROJECT_DIR$/src/main/java/Room.java">
       <ranges>
-        <range start1="19" end1="20" start2="19" end2="20" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="23" end1="29" start2="23" end2="29" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="30" end1="33" start2="30" end2="33" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="38" end1="39" start2="38" end2="42" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="42" end1="43" start2="45" end2="52" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="44" end1="45" start2="53" end2="55" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="52" end1="53" start2="62" end2="70" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="55" end1="55" start2="72" end2="73" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="64" end1="64" start2="82" end2="83" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="65" end1="65" start2="84" end2="86" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="66" end1="68" start2="87" end2="89" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="69" end1="69" start2="90" end2="95" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="71" end1="71" start2="97" end2="98" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="77" end1="77" start2="104" end2="105" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="85" end1="85" start2="113" end2="114" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="95" end1="95" start2="124" end2="126" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/Player.java">
-      <ranges>
-        <range start1="16" end1="18" start2="16" end2="23" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="19" end1="19" start2="24" end2="37" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="21" end1="22" start2="39" end2="40" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="23" end1="24" start2="41" end2="42" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="39" end1="40" start2="57" end2="58" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="41" end1="42" start2="59" end2="60" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="60" end1="61" start2="78" end2="78" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="63" end1="66" start2="80" end2="80" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="81" end1="82" start2="95" end2="96" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="83" end1="84" start2="97" end2="98" changelist="ad138746-f1a7-4d2f-9f16-dd3114b3782d" />
-        <range start1="89" end1="90" start2="103" end2="104" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="100" end1="102" start2="114" end2="116" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="104" end1="105" start2="118" end2="119" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="10" end1="10" start2="10" end2="11" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="17" end1="20" start2="18" end2="22" changelist="0612b03b-5029-40bc-88f2-c9d1a4be9580" />
       </ranges>
     </file>
   </component>
@@ -271,7 +238,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696500833174</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Delopgave 4. Weapon classes og equip.">
+      <option name="closed" value="true" />
+      <created>1696849309681</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1696849309682</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Changes by Marie Adventure Map">
+      <option name="closed" value="true" />
+      <created>1696849314406</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1696849314406</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +278,6 @@
     <MESSAGE value="Klasser rettet" />
     <MESSAGE value="Changes by Marie" />
     <MESSAGE value="Storyline + items" />
-    <MESSAGE value="Changes by Marie Adventure Map" />
     <MESSAGE value="map player" />
     <MESSAGE value="opdateret menuen" />
     <MESSAGE value="justering af south" />
@@ -303,14 +285,15 @@
     <MESSAGE value="Delopgave 2 færdig (find, take, drop, inventory)&#10;justering af UI og moveToNextRoom" />
     <MESSAGE value="Delopgave 3. Health, Food, Eat." />
     <MESSAGE value="Delopgave 4. Weapon classes og equip." />
-    <option name="LAST_COMMIT_MESSAGE" value="Delopgave 4. Weapon classes og equip." />
+    <MESSAGE value="Changes by Marie Adventure Map" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by Marie Adventure Map" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Player.java</url>
-          <line>74</line>
+          <line>83</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
