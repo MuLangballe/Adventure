@@ -22,6 +22,7 @@ public class Map {
         room1.setGoSouth(room4);
         room1.addItem(new Item("Flashlight", "it's small but effective.", EatMessage.CANT_EAT, EquipMessage.NOT_A_WEAPON));
         room1.addItem(new MeleeWeapon("Knife", "small rusty knife", EatMessage.CANT_EAT, EquipMessage.EQUIP, 10));
+       // room1.addEnemy(new Enemy("Testmonster", new MeleeWeapon("Testvåben", "Test", EatMessage.CANT_EAT, EquipMessage.EQUIP, 50), 50));
 
         // Directions+items from room 2:
         room2.setGoEast(room3);

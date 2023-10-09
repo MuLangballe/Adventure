@@ -8,6 +8,7 @@ public class Room {
     private Room goWest;
     private Room goEast;
     private ArrayList<Item> items = new ArrayList<>();
+    private ArrayList<Enemy> enemies = new ArrayList<>();
 
 
     public Room (String roomName, String description) {
