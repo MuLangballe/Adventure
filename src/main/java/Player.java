@@ -14,12 +14,30 @@ public class Player {
         return healthPoints;
     }
 
-    public void setHealthPoints(int healthPoints) {
-        this.healthPoints = healthPoints;
+    public boolean takeItem(String itemName) {
+        Item pickupFromRoom = current.removeItemFromRoom(itemName);
+        if (pickupFromRoom != null) {
+            inventory.add(pickupFromRoom);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean dropItem(String itemName) {
+        Item item = findItemInInventory(itemName);
+        // tjek om item findes i inventory
+            if (item != null) {
+                // hvis den findes, fjern fra inventory og add til rummet:
+                inventory.remove(item);
+                current.addItem(item);
+                return true;
+            }
+        // hvis den ikke findes i inventory:
+        return false;
     }
 
     public EatMessage eatItem(String itemName){
-        Item item = findItem(itemName);
+        Item item = findItemInInventory(itemName);
         if (item instanceof Food){
             int healthPoints1 =  ((Food) item).getHealthPoints(); //downcast
             healthPoints += healthPoints1;
@@ -37,9 +55,9 @@ public class Player {
     // Evt. tilføje metode til at bruge eatItem uden at adde til inventory først.
 
     public EquipMessage equipItem(String itemName){
-        Item item = findItem(itemName);
+        Item item = findItemInInventory(itemName);
         if (item instanceof Weapon){
-            inventory.remove(item); //TODO lige pt fjerner den våbenet
+          //  inventory.remove(item); fjerner våbnet
             currentWeapon = (Weapon) item;
             return EquipMessage.EQUIP;
 
@@ -87,7 +105,7 @@ public class Player {
         return inventory;
     }
 
-    public Item findItem(String itemName) {
+    public Item findItemInInventory(String itemName) {
         Item item = null;
         for (Item i : inventory) {
             if (i.getItemName().toLowerCase().contains(itemName.toLowerCase())) {
@@ -98,11 +116,11 @@ public class Player {
     }
 
     public Item removeItemFromInventory(String itemName) {
-        Item item = findItem(itemName);
-        inventory.remove(item); //TODO: håndtering af hvis man ikke kan finde objektet
+        Item item = findItemInInventory(itemName);
+        inventory.remove(item);
         return item;
     }
-    
+
 
     public boolean moveToNextRoom(String nextRoom) {
         if (nextRoom.equalsIgnoreCase("south")) {

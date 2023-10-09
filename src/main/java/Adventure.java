@@ -23,19 +23,27 @@ public class Adventure {
         return player.getCurrentPosition();
     }
 
-    public void takeItem(String menuChoice) {
+   /* public void takeItem(String menuChoice) {
         Item item = player.getCurrent().removeItem(menuChoice);
         player.addToInventory(item);
+    } */
+
+    public boolean takeItem(String itemName) {
+        return player.takeItem(itemName);
+    }
+
+    public boolean dropItem(String itemName) {
+        return player.dropItem(itemName);
     }
 
     public ArrayList<Item> getPlayerInventory() {
         return player.getInventory();
     }
 
-    public void dropItem(String menuChoice) {
+   /* public void dropItem(String menuChoice) {
         Item item = player.removeItemFromInventory(menuChoice);
         player.getCurrent().addItem(item);
-    }
+    } */
 
    /* public int healthbar() {
         return player.healthbar();

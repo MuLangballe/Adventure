@@ -17,7 +17,7 @@ public class UserInterface {
         String menuChoice;
 
         System.out.println("Welcome to adventure game!");
-        System.out.println("Your adventure starts in a forrest, looking into a cave. The entrance splits in two directions. A small flashlight appears just outside of the cave.\n");
+        System.out.println("Your adventure starts in a forrest, looking into a cave. The entrance splits in two directions. A small flashlight appears just outside of the cave.");
 
         do {
             System.out.println("""
@@ -36,11 +36,20 @@ public class UserInterface {
                     \s""");
 
             menuChoice = KEYBOARD.nextLine().toLowerCase();
-            String[] words = menuChoice.split(" ");
+            String[] words = menuChoice.split("\\s+");
+           /* if (words.length == 1){
+                menuChoice = words[1];
+            }*/
 
             switch (words[0]) {
                 case "take":
-                    ADVENTURE_GAME.takeItem(words[1]);
+                case "t":
+                    boolean takenItem = ADVENTURE_GAME.takeItem(words[1]);
+                    if (takenItem) {
+                        System.out.println("The item was added to you inventory.");
+                    } else {
+                        System.out.println("There's no item like this in the room.");
+                    }
                     break;
                 case "move":
                     if (ADVENTURE_GAME.moveToNextRoom(words[1])) {
@@ -50,7 +59,14 @@ public class UserInterface {
                     }
                     break;
                 case "drop":
-                    ADVENTURE_GAME.dropItem(words[1]);
+                case "d":
+                    boolean droppedItem = ADVENTURE_GAME.dropItem(words[1]);
+                    if (droppedItem) {
+                        System.out.println("The item was left in the room.");
+                    } else {
+                        System.out.println("There's no item like this in your inventory");
+                    }
+
                     break;
                 case "look":
                     System.out.println("you are now in " + ADVENTURE_GAME.getCurrentPosition());
@@ -64,8 +80,13 @@ public class UserInterface {
                     }
                 case "inventory":
                     ArrayList<Item> items = ADVENTURE_GAME.getPlayerInventory();
-                    for (Item i : items) {
-                        System.out.println(i);
+                    if(items.isEmpty()) {
+                        System.out.println("Your backpack is empty!");
+                    }
+                    else {
+                        for (Item item : items) {
+                            System.out.println(item);
+                        }
                     }
                     break;
                 case "health":
