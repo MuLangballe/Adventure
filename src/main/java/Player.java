@@ -10,6 +10,15 @@ public class Player {
         this.healthPoints = healthPoints;
     }
 
+    public boolean isPlayerDead(Player player){
+        if (healthPoints <= 0){
+            //game over: start over eller exit?
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public int getHealthPoints() {
         return healthPoints;
     }
