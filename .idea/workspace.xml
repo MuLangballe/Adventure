@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret) +&#10;unit test af enemy attack player">
+    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Lidt refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
     </list>
     <list id="8bf2829c-4441-4511-bda4-e1d05b17d8c9" name="Changes by thea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +68,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AdventureTest.Enemy_Attack_Player_Test">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Adventure" />
@@ -99,9 +98,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.AdventureTest.Enemy_Attack_Player_Test" />
         <item itemvalue="JUnit.AdventureTest.moveToNextRoom_Go_East" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -120,7 +119,7 @@
       <workItem from="1695979979287" duration="1943000" />
       <workItem from="1696934874008" duration="13309000" />
       <workItem from="1696964612432" duration="120000" />
-      <workItem from="1696964756474" duration="2634000" />
+      <workItem from="1696964756474" duration="3362000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -346,7 +345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696966102570</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Lidt refactoring">
+      <option name="closed" value="true" />
+      <created>1696967645830</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1696967645830</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,6 +388,7 @@
     <MESSAGE value="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret)" />
     <MESSAGE value="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret)&#10;unit test" />
     <MESSAGE value="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret) +&#10;unit test af enemy attack player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret) +&#10;unit test af enemy attack player" />
+    <MESSAGE value="Lidt refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lidt refactoring" />
   </component>
 </project>
