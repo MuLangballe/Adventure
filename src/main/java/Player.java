@@ -29,18 +29,33 @@ public class Player {
 
     // TODO Omskriv fra string til ?
     public String getCurrentPosition() {
-        String temp = currentRoom.getRoomName() + currentRoom.getDescription();
+        String currentPositionAndRoomItems = currentRoom.getRoomName() + currentRoom.getDescription();
         if (currentRoom.getEnemies() != null) {
             for (Enemy enemies : currentRoom.getEnemies()) {
-                temp += "\nYou see: " + enemies.getEnemyName() + ". It has a: " + enemies.getEnemyWeaponName() + ". Health: " + enemies.getEnemyHealth();
+                currentPositionAndRoomItems += "\nYou see: " + enemies.getEnemyName() + ". It has a: " + enemies.getEnemyWeaponName() + ". Health: " + enemies.getEnemyHealth();
             }
         }
         if (currentRoom.getItems() != null) {
             for (Item item : currentRoom.getItems()) {
-                temp += "\nYou find: " + item.getItemName() + ". " + item.getItemDescription();
+                currentPositionAndRoomItems += "\nYou find: " + item.getItemName() + ". " + item.getItemDescription();
             }
         }
-        return temp;
+        return currentPositionAndRoomItems;
+    }
+
+    public EquipMessage equipItem(String itemName) {
+        Item itemToEquip = findItemInInventory(itemName);
+        if (itemToEquip == null) {
+            return EquipMessage.WEAPON_NOT_FOUND;
+        }
+        if (itemToEquip instanceof Weapon) {
+            //  inventory.remove(item); fjerner våbnet
+            currentWeapon = (Weapon) itemToEquip;
+            return EquipMessage.EQUIP;
+
+            // Måske tilføje parameter på Player så man kun kan "Equippe" ét våben til spilleren
+        }
+        return EquipMessage.NOT_A_WEAPON;
     }
 
 
@@ -48,6 +63,11 @@ public class Player {
         Item itemToPickUp = currentRoom.removeItemFromRoom(itemName);
         if (itemToPickUp != null) {
             inventory.add(itemToPickUp);
+
+            if (currentWeapon == null) {
+                this.equipItem(itemName);
+            }
+
             return true;
         }
         return false;
@@ -67,37 +87,24 @@ public class Player {
     }
 
     public EatMessage eatItem(String itemName) {
-        Item item = findItemInInventory(itemName);
-        if (item instanceof Food) {
-            int healthPoints1 = ((Food) item).getHealthPoints();
+        Item itemToEat = findItemInInventory(itemName);
+
+        if (itemToEat == null) {
+            return EatMessage.NOT_FOUND;
+        }
+
+        if (itemToEat instanceof Food) {
+            int healthPoints1 = ((Food) itemToEat).getHealthPoints();
             healthPoints += healthPoints1;
             removeItemFromInventory(itemName);
             return EatMessage.EAT;
-        } else if (!(item instanceof Food)) {
-            return EatMessage.CANT_EAT;
-        } else if (item == null) {
-            return EatMessage.NOT_FOUND;
         }
-        return item.getEatReturnMessage();
+
+        return EatMessage.CANT_EAT;
+
     }
 
     // Evt. tilføje metode til at bruge eatItem uden at adde til inventory først.
-
-    public EquipMessage equipItem(String itemName) {
-        Item item = findItemInInventory(itemName);
-        if (item instanceof Weapon) {
-            //  inventory.remove(item); fjerner våbnet
-            currentWeapon = (Weapon) item;
-            return EquipMessage.EQUIP;
-
-            // Måske tilføje parameter på Player så man kun kan "Equippe" ét våben til spilleren
-        } else if (!(item instanceof Weapon)) {
-            return EquipMessage.NOT_A_WEAPON;
-        } else if (item == null) {
-            return EquipMessage.WEAPON_NOT_FOUND;
-        }
-        return item.getEquipReturnMessage();
-    }
 
     public AttackMessage playerAttackEnemy(String currentEnemy) {
         Enemy enemy = currentRoom.getEnemies().get(0);
