@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Delopgave 4. Weapon classes og equip.">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_09_2023_20_14_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_09_2023_20_14__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
-    </list>
-    <list id="0612b03b-5029-40bc-88f2-c9d1a4be9580" name="Changes by Marie" comment="Changes by Marie">
       <change beforePath="$PROJECT_DIR$/src/main/java/AttackMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AttackMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weapon.java" afterDir="false" />
     </list>
     <list id="8bf2829c-4441-4511-bda4-e1d05b17d8c9" name="Changes by thea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,27 +32,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/Player.java">
-      <ranges>
-        <range start1="7" end1="7" start2="7" end2="8" changelist="0612b03b-5029-40bc-88f2-c9d1a4be9580" />
-        <range start1="72" end1="73" start2="73" end2="74" changelist="0612b03b-5029-40bc-88f2-c9d1a4be9580" />
-        <range start1="82" end1="83" start2="83" end2="88" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="84" end1="84" start2="89" end2="92" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="85" end1="85" start2="93" end2="94" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="88" end1="88" start2="97" end2="103" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="97" end1="97" start2="112" end2="117" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="99" end1="100" start2="119" end2="120" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="104" end1="108" start2="124" end2="124" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/UserInterface.java">
-      <ranges>
-        <range start1="113" end1="115" start2="113" end2="115" changelist="0612b03b-5029-40bc-88f2-c9d1a4be9580" />
-        <range start1="119" end1="119" start2="119" end2="120" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -129,7 +97,7 @@
       <workItem from="1695724653675" duration="10836000" />
       <workItem from="1695886076953" duration="17809000" />
       <workItem from="1695979979287" duration="1943000" />
-      <workItem from="1696934874008" duration="8064000" />
+      <workItem from="1696934874008" duration="9808000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -307,7 +275,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696934626383</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Delopgave 4. Weapon classes og equip.">
+      <option name="closed" value="true" />
+      <created>1696944731703</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1696944731703</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Changes by Marie">
+      <option name="closed" value="true" />
+      <created>1696944735982</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1696944735982</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,8 +321,8 @@
     <MESSAGE value="Delopgave 2 færdig (find, take, drop, inventory)&#10;justering af UI og moveToNextRoom" />
     <MESSAGE value="Delopgave 3. Health, Food, Eat." />
     <MESSAGE value="Changes by Marie Adventure Map" />
-    <MESSAGE value="Changes by Marie" />
     <MESSAGE value="Delopgave 4. Weapon classes og equip." />
-    <option name="LAST_COMMIT_MESSAGE" value="Delopgave 4. Weapon classes og equip." />
+    <MESSAGE value="Changes by Marie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by Marie" />
   </component>
 </project>

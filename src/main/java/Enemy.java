@@ -1,18 +1,18 @@
  public class Enemy {
         private String enemyName;
         private Weapon enemyWeaponName;
-        private int enemyhealth;
+        private int enemyHealth;
 
-        public Enemy(String enemyName, Weapon enemyWeaponName, int enemyhealth){
+        public Enemy(String enemyName, Weapon enemyWeaponName, int enemyHealth){
             this.enemyName = enemyName;
             this.enemyWeaponName = enemyWeaponName;
-            this.enemyhealth = enemyhealth;
+            this.enemyHealth = enemyHealth;
         }
 
         public void enemyAttackPlayer(){
             // Hvor skal den kaldes henne? hvad får vi ind?
             // skal der her være en if for om health er <==0 ?
-            if (enemyhealth >= 1){
+            if (enemyHealth >= 1){
                 int attackResult;
             }
         }
@@ -39,16 +39,16 @@
          return enemyWeaponName;
      }
 
-     public int getEnemyhealth() {
-         return enemyhealth;
+     public int getEnemyHealth() {
+         return enemyHealth;
      }
 
-     public void setEnemyhealth(int enemyhealth) {
-         this.enemyhealth = enemyhealth;
+     public void setEnemyHealth(int enemyHealth) {
+         this.enemyHealth = enemyHealth;
      }
 
      public boolean isEnemyDead(Enemy enemy) {
-            if (enemyhealth <= 0){
+            if (enemyHealth <= 0){
                 //fjernes fra rummet
                 //enemy weapon addes til rummet, evt. et lig?
                 return true;
