@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret)&#10;unit test">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_10_2023_19_11_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_10_2023_19_11__Changes_.xml" beforeDir="false" />
+    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret) +&#10;unit test af enemy attack player">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AdventureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AdventureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AttackMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AttackMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MeleeWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MeleeWeapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RangedWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RangedWeapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
     <list id="8bf2829c-4441-4511-bda4-e1d05b17d8c9" name="Changes by thea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +124,7 @@
       <workItem from="1695979979287" duration="1943000" />
       <workItem from="1696934874008" duration="13309000" />
       <workItem from="1696964612432" duration="120000" />
-      <workItem from="1696964756474" duration="300000" />
+      <workItem from="1696964756474" duration="1339000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -332,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696964594736</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret) +&#10;unit test af enemy attack player">
+      <option name="closed" value="true" />
+      <created>1696965084851</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1696965084851</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,6 +376,7 @@
     <MESSAGE value="Changes by Marie" />
     <MESSAGE value="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret)" />
     <MESSAGE value="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret)&#10;unit test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret)&#10;unit test" />
+    <MESSAGE value="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret) +&#10;unit test af enemy attack player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret) +&#10;unit test af enemy attack player" />
   </component>
 </project>

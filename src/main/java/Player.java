@@ -11,27 +11,43 @@ public class Player {
         this.healthPoints = healthPoints;
     }
 
-    public boolean isPlayerDead(Player player) {
-        if (healthPoints <= 0) {
-            //game over: start over eller exit?
-            return true;
-        } else {
-            return false;
-        }
+    public ArrayList<Item> getInventory() {
+        return inventory;
     }
 
     public int getHealthPoints() {
         return healthPoints;
     }
 
+    public void setCurrentRoom(Room currentRoom) {
+        this.currentRoom = currentRoom;
+    }
+
     public void setHealthPoints(int healthPoints) {
         this.healthPoints = healthPoints;
     }
 
+    // TODO Omskriv fra string til ?
+    public String getCurrentPosition() {
+        String temp = currentRoom.getRoomName() + currentRoom.getDescription();
+        if (currentRoom.getEnemies() != null) {
+            for (Enemy enemies : currentRoom.getEnemies()) {
+                temp += "\nYou see: " + enemies.getEnemyName() + ". It has a: " + enemies.getEnemyWeaponName() + ". Health: " + enemies.getEnemyHealth();
+            }
+        }
+        if (currentRoom.getItems() != null) {
+            for (Item item : currentRoom.getItems()) {
+                temp += "\nYou find: " + item.getItemName() + ". " + item.getItemDescription();
+            }
+        }
+        return temp;
+    }
+
+
     public boolean takeItem(String itemName) {
-        Item pickupFromRoom = currentRoom.removeItemFromRoom(itemName);
-        if (pickupFromRoom != null) {
-            inventory.add(pickupFromRoom);
+        Item itemToPickUp = currentRoom.removeItemFromRoom(itemName);
+        if (itemToPickUp != null) {
+            inventory.add(itemToPickUp);
             return true;
         }
         return false;
@@ -109,29 +125,13 @@ public class Player {
 
 
     // TODO: Player dead + enemy dead
-
-    public void setCurrentRoom(Room currentRoom) {
-        this.currentRoom = currentRoom;
-    }
-
-    // TODO Omskriv fra string til ?
-    public String getCurrentPosition() {
-        String temp = currentRoom.getRoomName() + currentRoom.getDescription();
-        if (currentRoom.getEnemies() != null) {
-            for (Enemy enemies : currentRoom.getEnemies()) {
-                temp += "\nYou see: " + enemies.getEnemyName() + ". It has a: " + enemies.getEnemyWeaponName() + ". Health: " + enemies.getEnemyHealth();
-            }
+    public boolean isPlayerDead(Player player) {
+        if (healthPoints <= 0) {
+            //game over: start over eller exit?
+            return true;
+        } else {
+            return false;
         }
-        if (currentRoom.getItems() != null) {
-            for (Item item : currentRoom.getItems()) {
-                temp += "\nYou find: " + item.getItemName() + ". " + item.getItemDescription();
-            }
-        }
-        return temp;
-    }
-
-    public ArrayList<Item> getInventory() {
-        return inventory;
     }
 
     public Item findItemInInventory(String itemName) {

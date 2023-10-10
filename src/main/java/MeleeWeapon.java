@@ -7,6 +7,6 @@ public class MeleeWeapon extends Weapon{
 
     @Override
     public AttackMessage attack(){
-        return AttackMessage.ATTACK_SUCCESFULL;
+        return AttackMessage.ATTACK_SUCCESSFUL;
     }
 }
