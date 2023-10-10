@@ -80,11 +80,25 @@ public class Player {
         return item.getEquipReturnMessage();
     }
 
-    public AttackMessage attack(){
+    public AttackMessage playerAttackEnemy(String currentEnemy){
+        Enemy enemy = current.getEnemies().get(0);
+        if (enemy == null) {
+            return AttackMessage.NO_ENEMY_PRESENT;
+        }
         if(currentWeapon != null){
+            int attackResult = enemy.getEnemyhealth() - currentWeapon.getDamage();
+            enemy.setEnemyhealth(attackResult);
+            
            return currentWeapon.attack();
+           // Enemys health - weapon damage
         }
         return AttackMessage.NO_WEAPON_EQUIPPED;
+    }
+
+    // TODO:
+    public AttackMessage enemyAttackPlayer(Player player) {
+        Enemy enemy = current.getEnemies().get(0);
+        int enemyAttackResult = this.getHealthPoints() - enemy.getEnemyWeaponName();
     }
 
 
@@ -95,17 +109,18 @@ public class Player {
     // TODO Omskriv fra string til ?
     public String getCurrentPosition() {
         String temp = current.getRoomName() + current.getDescription();
+        if (current.getEnemies() != null) {
+            for (Enemy enemies : current.getEnemies()) {
+                temp +="\nYou see: " + enemies.getEnemyName() + ". It has a: " + enemies.getEnemyWeaponName() + ". Health: " + enemies.getEnemyhealth();
+            }
+        }
         if (current.getItems() != null) {
             for (Item item : current.getItems()) {
-                temp += "\n You find: " + item.getItemName() + ". " + item.getItemDescription();
+                temp += "\nYou find: " + item.getItemName() + ". " + item.getItemDescription();
             }
         }
         return temp;
     }
-
-    /*public void addToInventory(Item item) {
-        inventory.add(item);
-    }*/
 
     public ArrayList<Item> getInventory() {
         return inventory;

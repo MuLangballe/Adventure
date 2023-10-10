@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Adventure {
     private Map map;
     private Player player;
+    private Enemy enemy;
 
 
     public Adventure() {
@@ -61,8 +62,8 @@ public class Adventure {
         return player.equipItem(itemName);
     }
 
-    public AttackMessage attackMessage(){
-        return player.attack();
+    public AttackMessage attackMessage(String enemyName){
+        return player.playerAttackEnemy(enemyName);
     }
 
 

@@ -117,6 +117,7 @@ public class UserInterface {
                         case ATTACK_SUCCESFULL -> System.out.println("Attack succesfull! Good job!");
                         case OUT_OF_AMMO -> System.out.println("OH NO! Out of ammo!");
                         case NO_WEAPON_EQUIPPED -> System.out.println("No weapon equipped!");
+                        case NO_ENEMY_PRESENT -> System.out.println("No enemy present");
                     }
                     break;
                 case "help":

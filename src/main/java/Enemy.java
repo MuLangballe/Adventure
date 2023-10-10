@@ -9,7 +9,45 @@
             this.enemyhealth = enemyhealth;
         }
 
-        public boolean enemyIsDead(Enemy enemy) {
+        public void enemyAttackPlayer(){
+            // Hvor skal den kaldes henne? hvad får vi ind?
+            // skal der her være en if for om health er <==0 ?
+            if (enemyhealth >= 1){
+                int attackResult;
+            }
+        }
+        /* THE PLAYER ATTACKS ENEMY:
+        public AttackMessage playerAttackEnemy(String currentEnemy){
+        Enemy enemy = current.getEnemies().get(0);
+        if (enemy == null) {
+            return AttackMessage.NO_ENEMY_PRESENT;
+        }
+        if(currentWeapon != null){
+            int attackResult = enemy.getEnemyhealth() - currentWeapon.getDamage();
+            enemy.setEnemyhealth(attackResult);
+           return currentWeapon.attack();
+           // Enemys health - weapon damage
+        }
+        return AttackMessage.NO_WEAPON_EQUIPPED;
+    }*/
+
+     public String getEnemyName() {
+         return enemyName;
+     }
+
+     public Weapon getEnemyWeaponName() {
+         return enemyWeaponName;
+     }
+
+     public int getEnemyhealth() {
+         return enemyhealth;
+     }
+
+     public void setEnemyhealth(int enemyhealth) {
+         this.enemyhealth = enemyhealth;
+     }
+
+     public boolean isEnemyDead(Enemy enemy) {
             if (enemyhealth <= 0){
                 //fjernes fra rummet
                 //enemy weapon addes til rummet, evt. et lig?

@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Delopgave 4. Weapon classes og equip.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_09_2023_20_14_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_09_2023_20_14__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AdventureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AdventureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
-    <list id="0612b03b-5029-40bc-88f2-c9d1a4be9580" name="Changes by Marie" comment="">
+    <list id="0612b03b-5029-40bc-88f2-c9d1a4be9580" name="Changes by Marie" comment="Changes by Marie">
+      <change beforePath="$PROJECT_DIR$/src/main/java/AttackMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AttackMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weapon.java" afterDir="false" />
     </list>
     <list id="8bf2829c-4441-4511-bda4-e1d05b17d8c9" name="Changes by thea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,10 +45,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/Room.java">
+    <file path="$PROJECT_DIR$/src/main/java/Player.java">
       <ranges>
-        <range start1="10" end1="10" start2="10" end2="11" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="17" end1="20" start2="18" end2="22" changelist="0612b03b-5029-40bc-88f2-c9d1a4be9580" />
+        <range start1="7" end1="7" start2="7" end2="8" changelist="0612b03b-5029-40bc-88f2-c9d1a4be9580" />
+        <range start1="72" end1="73" start2="73" end2="74" changelist="0612b03b-5029-40bc-88f2-c9d1a4be9580" />
+        <range start1="82" end1="83" start2="83" end2="88" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="84" end1="84" start2="89" end2="92" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="85" end1="85" start2="93" end2="94" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="88" end1="88" start2="97" end2="103" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="97" end1="97" start2="112" end2="117" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="99" end1="100" start2="119" end2="120" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="104" end1="108" start2="124" end2="124" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/UserInterface.java">
+      <ranges>
+        <range start1="113" end1="115" start2="113" end2="115" changelist="0612b03b-5029-40bc-88f2-c9d1a4be9580" />
+        <range start1="119" end1="119" start2="119" end2="120" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
       </ranges>
     </file>
   </component>
@@ -54,26 +74,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/thea/Documents/Adventure",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/thea/Documents/Adventure&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -109,6 +129,7 @@
       <workItem from="1695724653675" duration="10836000" />
       <workItem from="1695886076953" duration="17809000" />
       <workItem from="1695979979287" duration="1943000" />
+      <workItem from="1696934874008" duration="8064000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -254,7 +275,39 @@
       <option name="project" value="LOCAL" />
       <updated>1696849314406</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Delopgave 4. Weapon classes og equip.">
+      <option name="closed" value="true" />
+      <created>1696859911527</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1696859911527</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Changes by Marie">
+      <option name="closed" value="true" />
+      <created>1696859918132</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1696859918132</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Delopgave 4. Weapon classes og equip.">
+      <option name="closed" value="true" />
+      <created>1696859922583</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1696859922583</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Delopgave 4. Weapon classes og equip.">
+      <option name="closed" value="true" />
+      <created>1696934626383</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1696934626383</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +329,6 @@
     <MESSAGE value="Delopgave 1" />
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Klasser rettet" />
-    <MESSAGE value="Changes by Marie" />
     <MESSAGE value="Storyline + items" />
     <MESSAGE value="map player" />
     <MESSAGE value="opdateret menuen" />
@@ -284,19 +336,9 @@
     <MESSAGE value="Changes by thea" />
     <MESSAGE value="Delopgave 2 færdig (find, take, drop, inventory)&#10;justering af UI og moveToNextRoom" />
     <MESSAGE value="Delopgave 3. Health, Food, Eat." />
-    <MESSAGE value="Delopgave 4. Weapon classes og equip." />
     <MESSAGE value="Changes by Marie Adventure Map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by Marie Adventure Map" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Player.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Changes by Marie" />
+    <MESSAGE value="Delopgave 4. Weapon classes og equip." />
+    <option name="LAST_COMMIT_MESSAGE" value="Delopgave 4. Weapon classes og equip." />
   </component>
 </project>
