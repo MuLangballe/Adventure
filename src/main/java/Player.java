@@ -92,6 +92,7 @@ public class Player {
         this.current = startRoom;
     }
 
+    // TODO Omskriv fra string til ?
     public String getCurrentPosition() {
         String temp = current.getRoomName() + current.getDescription();
         if (current.getItems() != null) {
