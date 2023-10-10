@@ -13,7 +13,7 @@ public class Adventure {
 
     public void buildMap() {
         map.buildMap();
-        player.setStartRoom(map.getStartRoom());
+        player.setCurrentRoom(map.getStartRoom());
     }
 
     public boolean moveToNextRoom(String nextRoom) {

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Player {
     private int healthPoints;
-    private Room current;
+    private Room currentRoom;
     private ArrayList<Item> inventory = new ArrayList<>();
     private Weapon currentWeapon;
     private Enemy currentEnemy;
@@ -29,7 +29,7 @@ public class Player {
     }
 
     public boolean takeItem(String itemName) {
-        Item pickupFromRoom = current.removeItemFromRoom(itemName);
+        Item pickupFromRoom = currentRoom.removeItemFromRoom(itemName);
         if (pickupFromRoom != null) {
             inventory.add(pickupFromRoom);
             return true;
@@ -43,7 +43,7 @@ public class Player {
         if (item != null) {
             // hvis den findes, fjern fra inventory og add til rummet:
             inventory.remove(item);
-            current.addItem(item);
+            currentRoom.addItem(item);
             return true;
         }
         // hvis den ikke findes i inventory:
@@ -84,7 +84,7 @@ public class Player {
     }
 
     public AttackMessage playerAttackEnemy(String currentEnemy) {
-        Enemy enemy = current.getEnemies().get(0);
+        Enemy enemy = currentRoom.getEnemies().get(0);
         if (enemy == null) {
             return AttackMessage.NO_ENEMY_PRESENT;
         }
@@ -100,7 +100,7 @@ public class Player {
 
     // TODO: hvornår skal enemy angribe? Evt. Attack-sequence mode.
     public AttackMessage enemyAttackPlayer(Player player) {
-        Enemy enemy = current.getEnemies().get(0);
+        Enemy enemy = currentRoom.getEnemies().get(0);
         int enemyAttackResult = this.getHealthPoints() - enemy.getEnemyWeaponName().getDamage();
         player.setHealthPoints(enemyAttackResult);
 
@@ -110,20 +110,20 @@ public class Player {
 
     // TODO: Player dead + enemy dead
 
-    public void setStartRoom(Room startRoom) {
-        this.current = startRoom;
+    public void setCurrentRoom(Room currentRoom) {
+        this.currentRoom = currentRoom;
     }
 
     // TODO Omskriv fra string til ?
     public String getCurrentPosition() {
-        String temp = current.getRoomName() + current.getDescription();
-        if (current.getEnemies() != null) {
-            for (Enemy enemies : current.getEnemies()) {
+        String temp = currentRoom.getRoomName() + currentRoom.getDescription();
+        if (currentRoom.getEnemies() != null) {
+            for (Enemy enemies : currentRoom.getEnemies()) {
                 temp += "\nYou see: " + enemies.getEnemyName() + ". It has a: " + enemies.getEnemyWeaponName() + ". Health: " + enemies.getEnemyHealth();
             }
         }
-        if (current.getItems() != null) {
-            for (Item item : current.getItems()) {
+        if (currentRoom.getItems() != null) {
+            for (Item item : currentRoom.getItems()) {
                 temp += "\nYou find: " + item.getItemName() + ". " + item.getItemDescription();
             }
         }
@@ -153,33 +153,33 @@ public class Player {
 
     public boolean moveToNextRoom(String nextRoom) {
         if (nextRoom.equalsIgnoreCase("south")) {
-            Room wantedRoom = current.getGoSouth();
+            Room wantedRoom = currentRoom.getGoSouth();
             if (wantedRoom != null) {
-                current = wantedRoom;
+                currentRoom = wantedRoom;
                 return true;
             } else {
                 return false;
             }
         } else if (nextRoom.equalsIgnoreCase("north")) {
-            Room wantedRoom = current.getGoNorth();
+            Room wantedRoom = currentRoom.getGoNorth();
             if (wantedRoom != null) {
-                current = wantedRoom;
+                currentRoom = wantedRoom;
                 return true;
             } else {
                 return false;
             }
         } else if (nextRoom.equalsIgnoreCase("east")) {
-            Room wantedRoom = current.getGoEast();
+            Room wantedRoom = currentRoom.getGoEast();
             if (wantedRoom != null) {
-                current = wantedRoom;
+                currentRoom = wantedRoom;
                 return true;
             } else {
                 return false;
             }
         } else if (nextRoom.equalsIgnoreCase("west")) {
-            Room wantedRoom = current.getGoWest();
+            Room wantedRoom = currentRoom.getGoWest();
             if (wantedRoom != null) {
-                current = wantedRoom;
+                currentRoom = wantedRoom;
                 return true;
             } else {
                 return false;
