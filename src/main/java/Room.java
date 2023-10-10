@@ -44,6 +44,10 @@ public class Room {
         return items;
     }
 
+    public ArrayList<Enemy> getEnemies(){
+        return enemies;
+    }
+
     public String getRoomName() {
         return roomName;
     }

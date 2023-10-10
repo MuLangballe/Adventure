@@ -111,8 +111,8 @@ public class UserInterface {
                     }
                     break;
                 case "attack":
-                case "a":
-                    AttackMessage attackMessage = ADVENTURE_GAME.attackMessage();
+                case "a": //Do - while til attack sekvens?
+                    AttackMessage attackMessage = ADVENTURE_GAME.attackMessage(words[1]);
                     switch (attackMessage){
                         case ATTACK_SUCCESFULL -> System.out.println("Attack succesfull! Good job!");
                         case OUT_OF_AMMO -> System.out.println("OH NO! Out of ammo!");

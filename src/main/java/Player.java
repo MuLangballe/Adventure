@@ -5,6 +5,7 @@ public class Player {
     private Room current;
     private ArrayList<Item> inventory = new ArrayList<>();
     private Weapon currentWeapon;
+    private Enemy currentEnemy;
 
     public Player(int healthPoints){
         this.healthPoints = healthPoints;
@@ -70,7 +71,7 @@ public class Player {
             currentWeapon = (Weapon) item;
             return EquipMessage.EQUIP;
 
-            // Måske tilføje parameter på Player så man kan "Equippe" ét våben til spilleren
+            // Måske tilføje parameter på Player så man kun kan "Equippe" ét våben til spilleren
         } else if (!(item instanceof Weapon)){
             return EquipMessage.NOT_A_WEAPON;
         }
