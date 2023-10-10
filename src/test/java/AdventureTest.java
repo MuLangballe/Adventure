@@ -12,7 +12,7 @@ class AdventureTest {
     public void setUp() {
         map = new Map();
         map.buildMap();
-        player = new Player(50);
+        player = new Player(100);
         player.setCurrentRoom(map.getStartRoom());
     }
 
@@ -25,7 +25,7 @@ class AdventureTest {
 
         // Assert
 
-        assertEquals(0, player.getHealthPoints());
+        assertEquals(50, player.getHealthPoints());
 
     }
 
