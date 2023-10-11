@@ -16,6 +16,10 @@ public class Adventure {
         player.setCurrentRoom(map.getStartRoom());
     }
 
+    public Player getPlayer(){
+        return player;
+    }
+
     public boolean moveToNextRoom(String nextRoom) {
         return player.moveToNextRoom(nextRoom);
     }
@@ -62,9 +66,16 @@ public class Adventure {
         return player.equipItem(itemName);
     }
 
-    public AttackMessage attackMessage(String enemyName){
+    public AttackMessage playerAttackEnemy(String enemyName){
         return player.playerAttackEnemy(enemyName);
     }
 
+  /*  public boolean isPlayerDead(Player player) {
+        return player.isPlayerDead(player);
+    } */
+
+    public AttackMessage enemyAttackPlayer(Player player) {
+        return player.enemyAttackPlayer(player);
+    }
 
 }

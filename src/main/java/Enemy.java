@@ -1,11 +1,11 @@
  public class Enemy {
         private String enemyName;
-        private Weapon enemyWeaponName;
+        private Weapon enemyWeapon;
         private int enemyHealth;
 
-        public Enemy(String enemyName, Weapon enemyWeaponName, int enemyHealth){
+        public Enemy(String enemyName, Weapon enemyWeapon, int enemyHealth){
             this.enemyName = enemyName;
-            this.enemyWeaponName = enemyWeaponName;
+            this.enemyWeapon = enemyWeapon;
             this.enemyHealth = enemyHealth;
         }
 
@@ -35,8 +35,8 @@
          return enemyName;
      }
 
-     public Weapon getEnemyWeaponName() {
-         return enemyWeaponName;
+     public Weapon getEnemyWeapon() {
+         return enemyWeapon;
      }
 
      public int getEnemyHealth() {

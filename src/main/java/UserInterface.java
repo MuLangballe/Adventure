@@ -5,10 +5,12 @@ public class UserInterface {
 
     private final Adventure ADVENTURE_GAME;
     private final Scanner KEYBOARD;
+    private Player player;
 
     public UserInterface(Adventure ADVENTURE_GAME) {
         this.ADVENTURE_GAME = ADVENTURE_GAME;
         this.KEYBOARD = new Scanner(System.in);
+        this.player = ADVENTURE_GAME.getPlayer();
     }
 
     public void startGame() {
@@ -112,7 +114,11 @@ public class UserInterface {
                     break;
                 case "attack":
                 case "a": //Do - while til attack sekvens?
-                    AttackMessage attackMessage = ADVENTURE_GAME.attackMessage(words[1]);
+                    AttackMessage attackMessage = ADVENTURE_GAME.playerAttackEnemy(words[1]);
+
+                    //    ADVENTURE_GAME.enemyAttackPlayer(this.ADVENTURE_GAME.getPlayer());
+
+
                     switch (attackMessage){
                         case ATTACK_SUCCESSFUL -> System.out.println("Attack successful! Good job!");
                         case OUT_OF_AMMO -> System.out.println("OH NO! Out of ammo!");

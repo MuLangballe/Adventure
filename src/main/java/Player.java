@@ -11,6 +11,10 @@ public class Player {
         this.healthPoints = healthPoints;
     }
 
+    public Room getCurrentRoom() {
+        return currentRoom;
+    }
+
     public ArrayList<Item> getInventory() {
         return inventory;
     }
@@ -32,7 +36,7 @@ public class Player {
         String currentPositionAndRoomItems = currentRoom.getRoomName() + currentRoom.getDescription();
         if (currentRoom.getEnemies() != null) {
             for (Enemy enemies : currentRoom.getEnemies()) {
-                currentPositionAndRoomItems += "\nYou see: " + enemies.getEnemyName() + ". It has a: " + enemies.getEnemyWeaponName() + ". Health: " + enemies.getEnemyHealth();
+                currentPositionAndRoomItems += "\nYou see: " + enemies.getEnemyName() + ". It has a: " + enemies.getEnemyWeapon() + ". Health: " + enemies.getEnemyHealth();
             }
         }
         if (currentRoom.getItems() != null) {
@@ -121,10 +125,14 @@ public class Player {
         return AttackMessage.NO_WEAPON_EQUIPPED;
     }
 
+    public Enemy getCurrentEnemy() {
+        return currentRoom.getEnemies().get(0);
+    }
+
     // TODO: hvornår skal enemy angribe? Evt. Attack-sequence mode.
     public AttackMessage enemyAttackPlayer(Player player) {
         Enemy enemy = currentRoom.getEnemies().get(0);
-        int enemyAttackResult = this.getHealthPoints() - enemy.getEnemyWeaponName().getDamage();
+        int enemyAttackResult = this.getHealthPoints() - enemy.getEnemyWeapon().getDamage();
         player.setHealthPoints(enemyAttackResult);
 
         return AttackMessage.ENEMY_ATTACKS;

@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Lidt refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
+    </list>
+    <list id="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" name="Changes by Marie" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
     <list id="8bf2829c-4441-4511-bda4-e1d05b17d8c9" name="Changes by thea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +38,27 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/UserInterface.java">
+      <ranges>
+        <range start1="7" end1="7" start2="7" end2="8" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="11" end1="11" start2="12" end2="13" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="39" end1="42" start2="41" end2="41" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="100" end1="101" start2="99" end2="102" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="114" end1="115" start2="115" end2="120" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="116" end1="119" start2="121" end2="167" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/Adventure.java">
+      <ranges>
+        <range start1="17" end1="17" start2="17" end2="21" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="25" end1="30" start2="29" end2="29" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="42" end1="51" start2="41" end2="41" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="64" end1="65" start2="54" end2="55" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="68" end1="68" start2="58" end2="65" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -119,7 +149,8 @@
       <workItem from="1695979979287" duration="1943000" />
       <workItem from="1696934874008" duration="13309000" />
       <workItem from="1696964612432" duration="120000" />
-      <workItem from="1696964756474" duration="3362000" />
+      <workItem from="1696964756474" duration="3406000" />
+      <workItem from="1697006707729" duration="7687000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -353,7 +384,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696967645830</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Lidt refactoring">
+      <option name="closed" value="true" />
+      <created>1696968136380</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1696968136380</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
