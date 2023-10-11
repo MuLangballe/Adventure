@@ -39,9 +39,6 @@ public class UserInterface {
 
             menuChoice = KEYBOARD.nextLine().toLowerCase();
             String[] words = menuChoice.split("\\s+");
-           /* if (words.length == 1){
-                menuChoice = words[1];
-            }*/
 
             switch (words[0]) {
                 case "take":
@@ -100,7 +97,9 @@ public class UserInterface {
                 case "h":
                     System.out.println("Healthpoint balance: " + ADVENTURE_GAME.getHealthPoints());
                     if (ADVENTURE_GAME.getHealthPoints() >= 50) {
-                        System.out.println("You look healthy. Keep up the good work!");
+                        System.out.println(ADVENTURE_GAME.getHealthPoints() + " You look healthy. Keep up the good work!");
+                    } else if (ADVENTURE_GAME.getHealthPoints() < 50) {
+                        System.out.println(ADVENTURE_GAME.getHealthPoints() + " Uf! You might need some food to get that health up!");
                     }
                     break;
                 case "equip":
@@ -120,9 +119,52 @@ public class UserInterface {
 
 
                     switch (attackMessage){
-                        case ATTACK_SUCCESSFUL -> System.out.println("Attack successful! Good job!");
-                        case OUT_OF_AMMO -> System.out.println("OH NO! Out of ammo!");
-                        case NO_WEAPON_EQUIPPED -> System.out.println("No weapon equipped!");
+                        case OUT_OF_AMMO -> {
+                            System.out.println("OH NO! Out of ammo!");
+                            Enemy enemy = ADVENTURE_GAME.getPlayer().getCurrentEnemy();
+                            AttackMessage message = ADVENTURE_GAME.enemyAttackPlayer(ADVENTURE_GAME.getPlayer());
+                            System.out.println("The enemy attacks you. Your health is now: " + ADVENTURE_GAME.getHealthPoints());
+
+                            if (player.getHealthPoints() <= 0 ) {
+                                System.out.println("You're dead. GAME OVER!");
+                                System.exit(0);
+                            }
+
+                        }
+                        case NO_WEAPON_EQUIPPED -> {
+                            System.out.println("No weapon equipped!");
+                            Enemy enemy = ADVENTURE_GAME.getPlayer().getCurrentEnemy();
+                            AttackMessage message = ADVENTURE_GAME.enemyAttackPlayer(ADVENTURE_GAME.getPlayer());
+                            System.out.println("The enemy attacks you. Your health is now: " + ADVENTURE_GAME.getHealthPoints());
+
+                            if (player.getHealthPoints() <= 0 ) {
+                                System.out.println("You're dead. GAME OVER!");
+                                System.exit(0);
+                            }
+                        }
+                        case ATTACK_SUCCESSFUL -> {
+
+                            // handle enemy state
+                            Enemy enemy = ADVENTURE_GAME.getPlayer().getCurrentEnemy();
+
+                            if (enemy.getEnemyHealth() <= 0 ) {
+                                System.out.println("Attack succesfull enemy is dead");
+
+                                Item droppedEnemyItem = enemy.getEnemyWeapon();
+                                player.getCurrentRoom().addItem(droppedEnemyItem);
+
+                                continue;
+                            }
+
+                            System.out.println("Attack successful! Enemies health: " + ADVENTURE_GAME.getPlayer().getCurrentEnemy().getEnemyHealth());
+
+                            // handle player state
+                            AttackMessage message = ADVENTURE_GAME.enemyAttackPlayer(ADVENTURE_GAME.getPlayer());
+                            System.out.println("The enemy attacks you. Your health is now: " + ADVENTURE_GAME.getHealthPoints());
+
+                        }
+
+
                         case NO_ENEMY_PRESENT -> System.out.println("No enemy present");
                     }
                     break;
