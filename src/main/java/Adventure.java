@@ -52,8 +52,8 @@ public class Adventure {
         return player.equipItem(itemName);
     }
 
-    public AttackMessage playerAttackEnemy(String enemyName){
-        return player.playerAttackEnemy(enemyName);
+    public AttackMessage playerAttackEnemy(){
+        return player.playerAttackEnemy();
     }
 
   /*  public boolean isPlayerDead(Player player) {

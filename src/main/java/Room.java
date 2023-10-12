@@ -10,7 +10,6 @@ public class Room {
     private ArrayList<Item> items = new ArrayList<>();
     private ArrayList<Enemy> enemies = new ArrayList<>();
 
-
     public Room (String roomName, String description) {
         this.roomName = roomName;
         this.description = description;

@@ -1,7 +1,9 @@
 public class Map {
 
     Room startRoom;
-
+    public Room getStartRoom() {
+        return startRoom;
+    }
     public void buildMap() {
 
         Room room1 = new Room("the cave entrance. ", "You are standing in a forrest, looking into a cave. The entrance splits in two directions. A small flashlight appears just outside of the cave.");
@@ -16,18 +18,17 @@ public class Map {
 
         startRoom = room1;
 
-
         // Directions+items from room 1:
         room1.setGoEast(room2);
         room1.setGoSouth(room4);
         room1.addItem(new Item("Flashlight", "it's small but effective.", EatMessage.CANT_EAT, EquipMessage.NOT_A_WEAPON));
         room1.addItem(new MeleeWeapon("Knife", "small rusty knife", EatMessage.CANT_EAT, EquipMessage.EQUIP, 50));
-        room1.addEnemy(new Enemy("Testmonster", new MeleeWeapon("Testvåben", "Test", EatMessage.CANT_EAT, EquipMessage.EQUIP, 50), 50));
 
         // Directions+items from room 2:
         room2.setGoEast(room3);
         room2.setGoWest(room1);
         room2.addItem(new Food("Apple", "beautiful red apple", EatMessage.EAT, EquipMessage.NOT_A_WEAPON, 15));
+        room2.addEnemy(new Enemy("Testmonster", new MeleeWeapon("Testvåben", "Test", EatMessage.CANT_EAT, EquipMessage.EQUIP, 50), 50));
 
         // Directions+items from room 3:
         room3.setGoSouth(room6);
@@ -38,6 +39,7 @@ public class Map {
         room4.setGoNorth(room1);
         room4.setGoSouth(room7);
         room4.addItem(new RangedWeapon("Bow", "old wooden bow", EatMessage.CANT_EAT,EquipMessage.EQUIP, 10, 5));
+        room4.addEnemy(new Enemy("Testmonster", new MeleeWeapon("Testvåben", "Test", EatMessage.CANT_EAT, EquipMessage.EQUIP, 50), 50));
 
         // Directions+items from room 5:
         room5.setGoSouth(room8);
@@ -55,17 +57,13 @@ public class Map {
         room8.setGoNorth(room5);
         room8.setGoEast(room9);
         room8.setGoWest(room7);
+        room8.addEnemy(new Enemy("Testmonster", new MeleeWeapon("Testvåben", "Test", EatMessage.CANT_EAT, EquipMessage.EQUIP, 50), 50));
 
         // Directions+items from room 9:
         room9.setGoNorth(room6);
         room9.setGoWest(room8);
-        room9.addItem(new MeleeWeapon("Sword", "Sharp silver sword with A LOT of diamonds", EatMessage.CANT_EAT, EquipMessage.EQUIP, 30));
+        room9.addItem(new MeleeWeapon("Sword", "Sharp silver sword with A LOT of diamonds", EatMessage.CANT_EAT, EquipMessage.EQUIP, 100));
 
     }
-
-    public Room getStartRoom() {
-        return startRoom;
-    }
-
 
 }

@@ -4,16 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Lidt refactoring">
+    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Første færdige version &#10;Userinterface redigeret">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_10_2023,_11_19_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_10_2023__11_19__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_10_2023,_08_30_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_10_2023__08_30__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
-    <list id="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" name="Changes by Marie" comment="">
+    <list id="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" name="Changes by Marie" comment="Changes by Marie">
       <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RangedWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RangedWeapon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
     <list id="8bf2829c-4441-4511-bda4-e1d05b17d8c9" name="Changes by thea" comment="" />
@@ -40,23 +47,59 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/UserInterface.java">
+    <file path="$PROJECT_DIR$/src/main/java/Player.java">
       <ranges>
-        <range start1="7" end1="7" start2="7" end2="8" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="11" end1="11" start2="12" end2="13" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="39" end1="42" start2="41" end2="41" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
-        <range start1="100" end1="101" start2="99" end2="102" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
-        <range start1="114" end1="115" start2="115" end2="120" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="116" end1="119" start2="121" end2="167" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="7" end1="8" start2="7" end2="8" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="59" end1="60" start2="59" end2="60" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="73" end1="74" start2="73" end2="73" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="79" end1="79" start2="78" end2="79" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="81" end1="82" start2="81" end2="81" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="83" end1="84" start2="82" end2="82" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="88" end1="89" start2="86" end2="86" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="105" end1="106" start2="102" end2="102" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="107" end1="108" start2="103" end2="103" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="110" end1="111" start2="105" end2="106" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="112" end1="115" start2="107" end2="117" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="117" end1="126" start2="119" end2="121" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="142" end1="143" start2="137" end2="138" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="149" end1="150" start2="144" end2="145" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="169" end1="170" start2="164" end2="165" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="177" end1="178" start2="172" end2="173" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="185" end1="186" start2="180" end2="181" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="193" end1="194" start2="188" end2="189" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
       </ranges>
     </file>
     <file path="$PROJECT_DIR$/src/main/java/Adventure.java">
       <ranges>
-        <range start1="17" end1="17" start2="17" end2="21" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="25" end1="30" start2="29" end2="29" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
-        <range start1="42" end1="51" start2="41" end2="41" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
-        <range start1="64" end1="65" start2="54" end2="55" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="68" end1="68" start2="58" end2="65" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="5" end1="6" start2="5" end2="6" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="54" end1="56" start2="54" end2="56" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="57" end1="61" start2="57" end2="57" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="65" end1="65" start2="61" end2="65" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/UserInterface.java">
+      <ranges>
+        <range start1="26" end1="27" start2="26" end2="27" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="33" end1="34" start2="33" end2="34" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="45" end1="50" start2="45" end2="62" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="60" end1="60" start2="72" end2="86" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="62" end1="68" start2="88" end2="97" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="69" end1="69" start2="98" end2="109" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="74" end1="74" start2="114" end2="116" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="75" end1="80" start2="117" end2="135" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="86" end1="87" start2="141" end2="142" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="88" end1="90" start2="143" end2="144" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="105" end1="111" start2="159" end2="180" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="114" end1="119" start2="183" end2="185" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="120" end1="121" start2="186" end2="187" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="127" end1="128" start2="193" end2="194" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="135" end1="137" start2="201" end2="203" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="139" end1="140" start2="205" end2="206" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="149" end1="150" start2="215" end2="216" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="161" end1="162" start2="227" end2="228" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="163" end1="163" start2="229" end2="234" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="166" end1="167" start2="237" end2="237" changelist="a5ffe720-9d07-4e1e-bd00-4bd6c5205179" />
+        <range start1="175" end1="176" start2="245" end2="245" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
       </ranges>
     </file>
   </component>
@@ -150,7 +193,8 @@
       <workItem from="1696934874008" duration="13309000" />
       <workItem from="1696964612432" duration="120000" />
       <workItem from="1696964756474" duration="3406000" />
-      <workItem from="1697006707729" duration="7687000" />
+      <workItem from="1697006707729" duration="8668000" />
+      <workItem from="1697093478888" duration="10963000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -392,7 +436,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696968136380</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Lidt refactoring">
+      <option name="closed" value="true" />
+      <created>1697018392748</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1697018392748</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Changes by Marie">
+      <option name="closed" value="true" />
+      <created>1697018489351</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1697018489351</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,11 +483,13 @@
     <MESSAGE value="Delopgave 3. Health, Food, Eat." />
     <MESSAGE value="Changes by Marie Adventure Map" />
     <MESSAGE value="Delopgave 4. Weapon classes og equip." />
-    <MESSAGE value="Changes by Marie" />
     <MESSAGE value="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret)" />
     <MESSAGE value="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret)&#10;unit test" />
     <MESSAGE value="Player Attack enemy +&#10;Enemy Attack player (ikke implementeret) +&#10;unit test af enemy attack player" />
     <MESSAGE value="Lidt refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lidt refactoring" />
+    <MESSAGE value="Attack implementeret" />
+    <MESSAGE value="Changes by Marie" />
+    <MESSAGE value="Første færdige version &#10;Userinterface redigeret" />
+    <option name="LAST_COMMIT_MESSAGE" value="Første færdige version &#10;Userinterface redigeret" />
   </component>
 </project>

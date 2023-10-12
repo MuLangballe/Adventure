@@ -77,6 +77,7 @@ public class Player {
         return false;
     }
 
+
     public boolean dropItem(String itemName) {
         Item item = findItemInInventory(itemName);
         // tjek om item findes i inventory
