@@ -5,7 +5,7 @@ public class Player {
     private Room currentRoom;
     private ArrayList<Item> inventory = new ArrayList<>();
     private Weapon currentWeapon;
-    private Enemy currentEnemy;
+    // slet?: private Enemy currentEnemy;
 
     public Player(int healthPoints) {
         this.healthPoints = healthPoints;
@@ -57,7 +57,7 @@ public class Player {
             currentWeapon = (Weapon) itemToEquip;
             return EquipMessage.EQUIP;
 
-            // Måske tilføje parameter på Player så man kun kan "Equippe" ét våben til spilleren
+            // TODO: Måske tilføje parameter på Player så man kun kan "Equippe" ét våben til spilleren
         }
         return EquipMessage.NOT_A_WEAPON;
     }
@@ -71,7 +71,6 @@ public class Player {
             if (currentWeapon == null) {
                 this.equipItem(itemName);
             }
-
             return true;
         }
         return false;
@@ -80,14 +79,11 @@ public class Player {
 
     public boolean dropItem(String itemName) {
         Item item = findItemInInventory(itemName);
-        // tjek om item findes i inventory
         if (item != null) {
-            // hvis den findes, fjern fra inventory og add til rummet:
             inventory.remove(item);
             currentRoom.addItem(item);
             return true;
         }
-        // hvis den ikke findes i inventory:
         return false;
     }
 
@@ -104,27 +100,25 @@ public class Player {
             removeItemFromInventory(itemName);
             return EatMessage.EAT;
         }
-
         return EatMessage.CANT_EAT;
-
     }
 
-    // Evt. tilføje metode til at bruge eatItem uden at adde til inventory først.
+    // TODO: tilføje metode til at bruge eatItem uden at adde til inventory først.
 
-    public AttackMessage playerAttackEnemy(String currentEnemy) {
-        Enemy enemy = currentRoom.getEnemies().get(0);
-        if (enemy == null) {
+    public AttackMessage playerAttackEnemy() {
+        if (!currentRoom.getEnemies().isEmpty()) {
+            Enemy enemy = currentRoom.getEnemies().get(0);
+            if (currentWeapon != null) {
+                int attackResult = enemy.getEnemyHealth() - currentWeapon.getDamage();
+                enemy.setEnemyHealth(attackResult);
+                return currentWeapon.attack();
+            }
+            return AttackMessage.NO_WEAPON_EQUIPPED;
+        } else {
             return AttackMessage.NO_ENEMY_PRESENT;
         }
-        if (currentWeapon != null) {
-            int attackResult = enemy.getEnemyHealth() - currentWeapon.getDamage();
-            enemy.setEnemyHealth(attackResult);
-
-            return currentWeapon.attack();
-            // Enemys health - weapon damage
-        }
-        return AttackMessage.NO_WEAPON_EQUIPPED;
     }
+
 
     public Enemy getCurrentEnemy() {
         return currentRoom.getEnemies().get(0);
@@ -141,14 +135,14 @@ public class Player {
 
 
     // TODO: Player dead + enemy dead
-    public boolean isPlayerDead(Player player) {
+   /* public boolean isPlayerDead(Player player) {
         if (healthPoints <= 0) {
             //game over: start over eller exit?
             return true;
         } else {
             return false;
         }
-    }
+    }*/
 
     public Item findItemInInventory(String itemName) {
         Item item = null;
@@ -168,7 +162,7 @@ public class Player {
 
 
     public boolean moveToNextRoom(String nextRoom) {
-        if (nextRoom.equalsIgnoreCase("south")) {
+        if (nextRoom.equalsIgnoreCase("south") || nextRoom.equalsIgnoreCase("s")) {
             Room wantedRoom = currentRoom.getGoSouth();
             if (wantedRoom != null) {
                 currentRoom = wantedRoom;
@@ -176,7 +170,7 @@ public class Player {
             } else {
                 return false;
             }
-        } else if (nextRoom.equalsIgnoreCase("north")) {
+        } else if (nextRoom.equalsIgnoreCase("north") || nextRoom.equalsIgnoreCase("n")) {
             Room wantedRoom = currentRoom.getGoNorth();
             if (wantedRoom != null) {
                 currentRoom = wantedRoom;
@@ -184,7 +178,7 @@ public class Player {
             } else {
                 return false;
             }
-        } else if (nextRoom.equalsIgnoreCase("east")) {
+        } else if (nextRoom.equalsIgnoreCase("east")|| nextRoom.equalsIgnoreCase("e")) {
             Room wantedRoom = currentRoom.getGoEast();
             if (wantedRoom != null) {
                 currentRoom = wantedRoom;
@@ -192,7 +186,7 @@ public class Player {
             } else {
                 return false;
             }
-        } else if (nextRoom.equalsIgnoreCase("west")) {
+        } else if (nextRoom.equalsIgnoreCase("west") || nextRoom.equalsIgnoreCase("w")) {
             Room wantedRoom = currentRoom.getGoWest();
             if (wantedRoom != null) {
                 currentRoom = wantedRoom;

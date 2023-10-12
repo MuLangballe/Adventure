@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Adventure {
     private Map map;
     private Player player;
-    private Enemy enemy;
+    // slet?: private Enemy enemy;
 
 
     public Adventure() {
@@ -56,12 +56,12 @@ public class Adventure {
         return player.playerAttackEnemy();
     }
 
-  /*  public boolean isPlayerDead(Player player) {
-        return player.isPlayerDead(player);
-    } */
-
     public AttackMessage enemyAttackPlayer(Player player) {
         return player.enemyAttackPlayer(player);
     }
+
+    /*  public boolean isPlayerDead(Player player) {
+        return player.isPlayerDead(player);
+    } */
 
 }

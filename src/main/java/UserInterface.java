@@ -70,6 +70,20 @@ public class UserInterface {
                         System.out.println("No room in that direction.");
                     }
                     break;
+                case "south":
+                case "s":
+                case "north":
+                case "n":
+                case "west":
+                case "w":
+                case "east":
+                case "e":
+                    if (ADVENTURE_GAME.moveToNextRoom(words[0])) {
+                        System.out.println("you are now in " + ADVENTURE_GAME.getCurrentPosition());
+                    } else {
+                        System.out.println("No room in that direction.");
+                    }
+                    break;
                 case "drop":
                 case "d":
 
@@ -214,8 +228,12 @@ public class UserInterface {
                             ADVENTURE_GAME.enemyAttackPlayer(ADVENTURE_GAME.getPlayer());
                             System.out.println("The enemy attacks you. Your health is now: " + ADVENTURE_GAME.getHealthPoints());
 
-                        }
+                            if (player.getHealthPoints() <= 0) {
+                                System.out.println("You're dead. GAME OVER!");
+                                System.exit(0);
+                            }
 
+                        }
 
                         case NO_ENEMY_PRESENT -> System.out.println("No enemy present");
                     }

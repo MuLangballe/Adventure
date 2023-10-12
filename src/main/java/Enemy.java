@@ -1,35 +1,13 @@
  public class Enemy {
-        private String enemyName;
-        private Weapon enemyWeapon;
-        private int enemyHealth;
+     private String enemyName;
+     private Weapon enemyWeapon;
+     private int enemyHealth;
 
-        public Enemy(String enemyName, Weapon enemyWeapon, int enemyHealth){
-            this.enemyName = enemyName;
-            this.enemyWeapon = enemyWeapon;
-            this.enemyHealth = enemyHealth;
-        }
-
-        public void enemyAttackPlayer(){
-            // Hvor skal den kaldes henne? hvad får vi ind?
-            // skal der her være en if for om health er <==0 ?
-            if (enemyHealth >= 1){
-                int attackResult;
-            }
-        }
-        /* THE PLAYER ATTACKS ENEMY:
-        public AttackMessage playerAttackEnemy(String currentEnemy){
-        Enemy enemy = current.getEnemies().get(0);
-        if (enemy == null) {
-            return AttackMessage.NO_ENEMY_PRESENT;
-        }
-        if(currentWeapon != null){
-            int attackResult = enemy.getEnemyhealth() - currentWeapon.getDamage();
-            enemy.setEnemyhealth(attackResult);
-           return currentWeapon.attack();
-           // Enemys health - weapon damage
-        }
-        return AttackMessage.NO_WEAPON_EQUIPPED;
-    }*/
+     public Enemy(String enemyName, Weapon enemyWeapon, int enemyHealth) {
+         this.enemyName = enemyName;
+         this.enemyWeapon = enemyWeapon;
+         this.enemyHealth = enemyHealth;
+     }
 
      public String getEnemyName() {
          return enemyName;
@@ -46,8 +24,31 @@
      public void setEnemyHealth(int enemyHealth) {
          this.enemyHealth = enemyHealth;
      }
+ }
+ /*
+        public void enemyAttackPlayer(){
+            // Hvor skal den kaldes henne? hvad får vi ind?
+            // skal der her være en if for om health er <==0 ?
+            if (enemyHealth >= 1){
+                int attackResult;
+            }
+        }
+         THE PLAYER ATTACKS ENEMY:
+        public AttackMessage playerAttackEnemy(String currentEnemy){
+        Enemy enemy = current.getEnemies().get(0);
+        if (enemy == null) {
+            return AttackMessage.NO_ENEMY_PRESENT;
+        }
+        if(currentWeapon != null){
+            int attackResult = enemy.getEnemyhealth() - currentWeapon.getDamage();
+            enemy.setEnemyhealth(attackResult);
+           return currentWeapon.attack();
+           // Enemys health - weapon damage
+        }
+        return AttackMessage.NO_WEAPON_EQUIPPED;
+    }*/
 
-     public boolean isEnemyDead(Enemy enemy) {
+    /* public boolean isEnemyDead(Enemy enemy) {
             if (enemyHealth <= 0){
                 //fjernes fra rummet
                 //enemy weapon addes til rummet, evt. et lig?
@@ -66,6 +67,5 @@
 
 // Enum tilføje scenarier i AttackMessage: PLAYER_DEAD, ENEMY_DEAD, PLAYER_WAS_DAMAGED,
 
-
 // en funktion til at dræbe player og/eller enemy når man er løbet tør for health
-}
+} */
