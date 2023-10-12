@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Første færdige version &#10;Userinterface redigeret">
+    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Anden færdige version &#10;Gameplay redigeret">
+      <change afterPath="$PROJECT_DIR$/docs/ADVENTUREGAME_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/AdventureGameClasses1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Attack sekvens aktivitets diagram.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
     </list>
-    <list id="57985418-f93b-40ee-884c-2edd5dabd0d6" name="Changes by Marie" comment="">
+    <list id="57985418-f93b-40ee-884c-2edd5dabd0d6" name="Changes by Marie" comment="Changes by Marie">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
     </list>
     <list id="8bf2829c-4441-4511-bda4-e1d05b17d8c9" name="Changes by thea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,29 +41,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/Map.java">
+    <file path="$PROJECT_DIR$/src/main/java/Player.java">
       <ranges>
-        <range start1="6" end1="6" start2="6" end2="7" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
-        <range start1="11" end1="12" start2="12" end2="13" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="13" end1="14" start2="14" end2="15" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="16" end1="19" start2="17" end2="18" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
-        <range start1="24" end1="25" start2="23" end2="23" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="29" end1="31" start2="27" end2="28" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="35" end1="35" start2="32" end2="33" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="40" end1="42" start2="38" end2="39" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="46" end1="46" start2="43" end2="45" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="50" end1="50" start2="49" end2="50" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="54" end1="54" start2="54" end2="55" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="59" end1="60" start2="60" end2="61" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="64" end1="65" start2="65" end2="66" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="67" end1="68" start2="68" end2="68" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="7" end1="8" start2="7" end2="7" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
+        <range start1="33" end1="34" start2="32" end2="33" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
+        <range start1="38" end1="39" start2="37" end2="38" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="55" end1="56" start2="54" end2="54" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
       </ranges>
     </file>
-    <file path="$PROJECT_DIR$/src/main/java/UserInterface.java">
+    <file path="$PROJECT_DIR$/src/main/java/Map.java">
       <ranges>
-        <range start1="197" end1="198" start2="197" end2="197" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
-        <range start1="230" end1="231" start2="229" end2="230" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="234" end1="235" start2="233" end2="233" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
+        <range start1="3" end1="3" start2="3" end2="4" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
+        <range start1="9" end1="10" start2="10" end2="11" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="13" end1="15" start2="14" end2="16" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="16" end1="18" start2="17" end2="21" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="54" end1="55" start2="57" end2="58" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
+        <range start1="60" end1="61" start2="63" end2="64" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
+        <range start1="68" end1="68" start2="71" end2="73" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
       </ranges>
     </file>
   </component>
@@ -96,6 +94,9 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
@@ -154,7 +155,7 @@
       <workItem from="1696964612432" duration="120000" />
       <workItem from="1696964756474" duration="3406000" />
       <workItem from="1697006707729" duration="8668000" />
-      <workItem from="1697093478888" duration="15700000" />
+      <workItem from="1697093478888" duration="18023000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -428,7 +429,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697104643705</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Anden færdige version &#10;Gameplay redigeret">
+      <option name="closed" value="true" />
+      <created>1697115008507</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1697115008507</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Changes by Marie">
+      <option name="closed" value="true" />
+      <created>1697115012179</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1697115012179</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,6 +482,7 @@
     <MESSAGE value="Lidt refactoring" />
     <MESSAGE value="Attack implementeret" />
     <MESSAGE value="Første færdige version &#10;Userinterface redigeret" />
+    <MESSAGE value="Anden færdige version &#10;Gameplay redigeret" />
     <MESSAGE value="Changes by Marie" />
     <option name="LAST_COMMIT_MESSAGE" value="Changes by Marie" />
   </component>

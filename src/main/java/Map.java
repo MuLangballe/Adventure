@@ -7,15 +7,17 @@ public class Map {
 
     public void buildMap() {
 
-        Room room1 = new Room("the cave entrance. ", "You are standing in a forrest, looking into a cave. The entrance splits in two directions. A small flashlight appears just outside of the cave.");
+        Room room1 = new Room("the cave entrance. ", "You are standing in a forrest, looking into a cave. The entrance splits in two directions.");
         Room room2 = new Room("the clay cave. ", "You are standing in a typical cave-like room with clay walls. There are roots coming down from the ceiling.");
         Room room3 = new Room("the moist cave. ", "You entered a moist room with a lot of colorful fungi.");
         Room room4 = new Room("the drip cave. ", "You hear a drip as you enter the room. A small hole in the ceiling let's the moonshine in. Another drip...");
-        Room room5 = new Room("the diamond cave. ", "You go through the small and narrow hole in the north wall... at first the darkness is overwhelming. So you turn on your flashlight, and is almost blinded by something shining. You discover the whole cave is covered in diamonds!");
-        Room room6 = new Room("the prison room. ", "This room has thick stonewalls and floors. You notice some broken chains on the floor, and some broken barricades in front of the rooms entrances... But it seems like whatever was imprisoned is no longer here.");
+        Room room5 = new Room("the diamond cave. ", "You go through the small and narrow hole in the north wall... at first the darkness is overwhelming.\nSo you turn on your flashlight, and is almost blinded by something shining. You discover the whole cave is covered in diamonds!");
+        Room room6 = new Room("the prison room. ", "This room has thick stonewalls and floors. You notice some broken chains on the floor, and some broken \nbarricades in front of the rooms entrances... But it seems like whatever was imprisoned is no longer here.");
         Room room7 = new Room("the narrow cave. ", "This room is very narrow and full of cobwebs and spiders.");
-        Room room8 = new Room("the cellar room. ", "The room has a stonewall, and looks like a cellar room. There is a picture of a strange creature on the north wall. Looks like there's a hole behind it...");
-        Room room9 = new Room("the very very dark cave. ", "You entered a very dark room, it is hard to see anything. Whoops! You fall. There must be a hole in the floor! You try to get up - and feels something just beside your right hand. it'sticky.");
+        Room room8 = new Room("the cellar room. ", "The room has a stonewall, and looks like a cellar room. There is a picture of a strange creature on the \nnorth wall. Looks like there's a hole behind it...");
+        Room room9 = new Room("the very very dark cave. ", "You entered a very dark room, it is hard to see anything. Whoops! You fall. There must be a hole \nin the floor! You try to get up - and feels something just beside your right hand. it'sticky.");
+
+        startRoom = room1;
 
         // Directions+items from room 1:
         room1.setGoEast(room2);
@@ -58,7 +60,7 @@ public class Map {
         room8.setGoNorth(room5);
         room8.setGoEast(room9);
         room8.setGoWest(room7);
-        room8.addEnemy(new Enemy("Big hairy guardian troll", new MeleeWeapon("Double-edged axe", "Beautiful carvings that look like a strange language", EatMessage.CANT_EAT, EquipMessage.EQUIP, 60), 50));
+        room8.addEnemy(new Enemy("Big hairy guardian troll", new MeleeWeapon("Double-edged axe", "Mysterious carvings, could be a strange language", EatMessage.CANT_EAT, EquipMessage.EQUIP, 60), 50));
 
         // Directions+items from room 9:
         room9.setGoNorth(room6);

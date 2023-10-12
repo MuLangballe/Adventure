@@ -36,7 +36,7 @@ public class Player {
         String currentPositionAndRoomItems = currentRoom.getRoomName() + currentRoom.getDescription();
         if (currentRoom.getEnemies() != null) {
             for (Enemy enemies : currentRoom.getEnemies()) {
-                currentPositionAndRoomItems += "\nYou see: " + enemies.getEnemyName() + ". It has a: " + enemies.getEnemyWeapon() + ". Health: " + enemies.getEnemyHealth();
+                currentPositionAndRoomItems += "\nYou see: " + enemies.getEnemyName() /* + ". It has a: " + enemies.getEnemyWeapon() */ + ". Health: " + enemies.getEnemyHealth();
             }
         }
         if (currentRoom.getItems() != null) {
