@@ -4,6 +4,7 @@ public class Map {
     public Room getStartRoom() {
         return startRoom;
     }
+
     public void buildMap() {
 
         Room room1 = new Room("the cave entrance. ", "You are standing in a forrest, looking into a cave. The entrance splits in two directions. A small flashlight appears just outside of the cave.");
@@ -14,9 +15,7 @@ public class Map {
         Room room6 = new Room("the prison room. ", "This room has thick stonewalls and floors. You notice some broken chains on the floor, and some broken barricades in front of the rooms entrances... But it seems like whatever was imprisoned is no longer here.");
         Room room7 = new Room("the narrow cave. ", "This room is very narrow and full of cobwebs and spiders.");
         Room room8 = new Room("the cellar room. ", "The room has a stonewall, and looks like a cellar room. There is a picture of a strange creature on the north wall. Looks like there's a hole behind it...");
-        Room room9 = new Room("the very very dark cave. ", "You entered a very dark room, it is hard to see anything. Whoops! You fall. There must be a hole in the floor! You try to get up - and feels something just beside your right hand. it's sharp. Sort of feels like a sword?");
-
-        startRoom = room1;
+        Room room9 = new Room("the very very dark cave. ", "You entered a very dark room, it is hard to see anything. Whoops! You fall. There must be a hole in the floor! You try to get up - and feels something just beside your right hand. it'sticky.");
 
         // Directions+items from room 1:
         room1.setGoEast(room2);

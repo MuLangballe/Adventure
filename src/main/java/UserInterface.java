@@ -195,7 +195,6 @@ public class UserInterface {
                                 System.out.println("You're dead. GAME OVER!");
                                 System.exit(0);
                             }
-
                         }
                         case NO_WEAPON_EQUIPPED -> {
                             System.out.println("No weapon equipped!");
@@ -232,7 +231,6 @@ public class UserInterface {
                                 System.out.println("You're dead. GAME OVER!");
                                 System.exit(0);
                             }
-
                         }
 
                         case NO_ENEMY_PRESENT -> System.out.println("No enemy present");
