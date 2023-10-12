@@ -1,6 +1,7 @@
 public class Map {
 
     Room startRoom;
+
     public Room getStartRoom() {
         return startRoom;
     }
@@ -54,7 +55,7 @@ public class Map {
         // Directions+items from room 7:
         room7.setGoNorth(room4);
         room7.setGoEast(room8);
-        room7.addEnemy(new Enemy("HUGE spider", new MeleeWeapon("Poisonous tooth", "Smelly. Luminous. DEFINITELY poisonous. Does Spiders even have teeth?", EatMessage.CANT_EAT, EquipMessage.EQUIP, 20), 100));
+        room7.addEnemy(new Enemy("HUGE spider, with teeth..?", new MeleeWeapon("Poisonous tooth", "Smelly. Luminous. DEFINITELY poisonous. Does Spiders even have teeth?", EatMessage.CANT_EAT, EquipMessage.EQUIP, 20), 100));
 
         // Directions+items from room 8:
         room8.setGoNorth(room5);
@@ -68,4 +69,6 @@ public class Map {
         room9.addItem(new Food("Yuck", "Hard to define sticky yuck.", EatMessage.EAT, EquipMessage.NOT_A_WEAPON, 15));
 
     }
+
+
 }

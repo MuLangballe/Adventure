@@ -5,7 +5,6 @@ public class Player {
     private Room currentRoom;
     private ArrayList<Item> inventory = new ArrayList<>();
     private Weapon currentWeapon;
-    // slet?: private Enemy currentEnemy;
 
     public Player(int healthPoints) {
         this.healthPoints = healthPoints;
@@ -31,7 +30,7 @@ public class Player {
         this.healthPoints = healthPoints;
     }
 
-    // TODO Omskriv fra string til ?
+    // TODO Omskriv så String kommer i UI
     public String getCurrentPosition() {
         String currentPositionAndRoomItems = currentRoom.getRoomName() + currentRoom.getDescription();
         if (currentRoom.getEnemies() != null) {
@@ -53,7 +52,6 @@ public class Player {
             return EquipMessage.WEAPON_NOT_FOUND;
         }
         if (itemToEquip instanceof Weapon) {
-            //  inventory.remove(item); fjerner våbnet
             currentWeapon = (Weapon) itemToEquip;
             return EquipMessage.EQUIP;
 
