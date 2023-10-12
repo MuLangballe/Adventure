@@ -228,7 +228,7 @@ public class UserInterface {
                             ADVENTURE_GAME.enemyAttackPlayer(ADVENTURE_GAME.getPlayer());
                             System.out.println("The enemy attacks you. Your health is now: " + ADVENTURE_GAME.getHealthPoints());
 
-                            if (player.getHealthPoints() <= 0) {
+                            if (ADVENTURE_GAME.getHealthPoints() <= 0) {
                                 System.out.println("You're dead. GAME OVER!");
                                 System.exit(0);
                             }
