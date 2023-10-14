@@ -35,7 +35,7 @@ public class Room {
     }
     public Item removeItemFromRoom(String itemName){
         Item item = findItemInRoom(itemName);
-        items.remove(item); //TODO: håndtering af hvis man ikke kan finde objektet
+        items.remove(item);
         return item;
     }
 

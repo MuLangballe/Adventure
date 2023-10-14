@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Anden færdige version &#10;Gameplay redigeret">
-      <change afterPath="$PROJECT_DIR$/docs/ADVENTUREGAME_1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/AdventureGameClasses1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/Attack sekvens aktivitets diagram.png" afterDir="false" />
+    <list default="true" id="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" name="Changes" comment="Tredje færdige version &#10;Gameplay redigeret">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AttackMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AttackMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
-    <list id="57985418-f93b-40ee-884c-2edd5dabd0d6" name="Changes by Marie" comment="Changes by Marie">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-    </list>
+    <list id="57985418-f93b-40ee-884c-2edd5dabd0d6" name="Changes by Marie" comment="Changes by Marie" />
     <list id="8bf2829c-4441-4511-bda4-e1d05b17d8c9" name="Changes by thea" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,27 +34,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/Player.java">
-      <ranges>
-        <range start1="7" end1="8" start2="7" end2="7" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
-        <range start1="33" end1="34" start2="32" end2="33" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
-        <range start1="38" end1="39" start2="37" end2="38" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="55" end1="56" start2="54" end2="54" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/Map.java">
-      <ranges>
-        <range start1="3" end1="3" start2="3" end2="4" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
-        <range start1="9" end1="10" start2="10" end2="11" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="13" end1="15" start2="14" end2="16" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="16" end1="18" start2="17" end2="21" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="54" end1="55" start2="57" end2="58" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
-        <range start1="60" end1="61" start2="63" end2="64" changelist="4ff2a4a7-dde3-42cb-8e00-903ed9a0b170" />
-        <range start1="68" end1="68" start2="71" end2="73" changelist="57985418-f93b-40ee-884c-2edd5dabd0d6" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -155,7 +129,8 @@
       <workItem from="1696964612432" duration="120000" />
       <workItem from="1696964756474" duration="3406000" />
       <workItem from="1697006707729" duration="8668000" />
-      <workItem from="1697093478888" duration="18023000" />
+      <workItem from="1697093478888" duration="18216000" />
+      <workItem from="1697141916426" duration="7988000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -445,7 +420,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697115012179</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Tredje færdige version &#10;Gameplay redigeret">
+      <option name="closed" value="true" />
+      <created>1697117347771</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1697117347771</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Changes by Marie">
+      <option name="closed" value="true" />
+      <created>1697117352748</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1697117352748</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,6 +474,7 @@
     <MESSAGE value="Attack implementeret" />
     <MESSAGE value="Første færdige version &#10;Userinterface redigeret" />
     <MESSAGE value="Anden færdige version &#10;Gameplay redigeret" />
+    <MESSAGE value="Tredje færdige version &#10;Gameplay redigeret" />
     <MESSAGE value="Changes by Marie" />
     <option name="LAST_COMMIT_MESSAGE" value="Changes by Marie" />
   </component>

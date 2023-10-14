@@ -208,18 +208,17 @@ public class UserInterface {
                             }
                         }
                         case ATTACK_SUCCESSFUL -> {
-
                             // handle enemy state
-                            Enemy enemy = ADVENTURE_GAME.getPlayer().getCurrentEnemy();
+                            // Enemy enemy = ADVENTURE_GAME.getPlayer().getCurrentEnemy();
 
-                            if (enemy.getEnemyHealth() <= 0) {
+                        /*    if (enemy.getEnemyHealth() <= 0) {
                                 System.out.println("Attack succesfull enemy is dead");
 
                                 Item droppedEnemyItem = enemy.getEnemyWeapon();
                                 player.getCurrentRoom().addItem(droppedEnemyItem);
 
                                 continue;
-                            }
+                            }*/
 
                             System.out.println("Attack successful! Enemies health: " + ADVENTURE_GAME.getPlayer().getCurrentEnemy().getEnemyHealth());
 
@@ -234,11 +233,17 @@ public class UserInterface {
                         }
 
                         case NO_ENEMY_PRESENT -> System.out.println("No enemy present");
+
+                        case ENEMY_DEAD -> System.out.println("Attack successful! enemy is dead");
                     }
                     break;
                 case "help":
                     System.out.println("go google");
                     break;
+
+                case "exit":
+                    System.exit(0);
+
                 default:
                     System.out.println("What? i don't understand that gibberish. Try again!");
             }

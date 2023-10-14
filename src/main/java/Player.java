@@ -54,8 +54,6 @@ public class Player {
         if (itemToEquip instanceof Weapon) {
             currentWeapon = (Weapon) itemToEquip;
             return EquipMessage.EQUIP;
-
-            // TODO: Måske tilføje parameter på Player så man kun kan "Equippe" ét våben til spilleren
         }
         return EquipMessage.NOT_A_WEAPON;
     }
@@ -109,6 +107,12 @@ public class Player {
             if (currentWeapon != null) {
                 int attackResult = enemy.getEnemyHealth() - currentWeapon.getDamage();
                 enemy.setEnemyHealth(attackResult);
+                if (enemy.getEnemyHealth() <= 0) {
+                    currentRoom.getEnemies().remove(0);
+                    Item droppedEnemyItem = enemy.getEnemyWeapon();
+                    currentRoom.addItem(droppedEnemyItem);
+                    return AttackMessage.ENEMY_DEAD;
+                }
                 return currentWeapon.attack();
             }
             return AttackMessage.NO_WEAPON_EQUIPPED;
